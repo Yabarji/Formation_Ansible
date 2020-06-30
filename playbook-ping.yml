@@ -1,0 +1,7 @@
+---
+- name: Constitution playbook ping ensemble des clients
+  hosts: all
+
+  tasks:
+  - name: Ping des clients
+    ping:

@@ -1,0 +1,24 @@
+---
+- name: Acte I du premier Playbook
+  hosts: all
+
+  tasks:
+  - name: Tache I de l'Acte I
+    debug:
+      msg: "Hola el Mundo"
+
+  - name: Tache II de l'Acte I
+    debug:
+      msg: "Que Tal ?"
+
+- name: Acte II du premier Playbook
+  hosts: all
+
+  tasks:
+  - name: Tache I de l'Acte II
+    debug:
+      msg: "Hello world"
+
+  - name: Tache II de l'Acte II
+    debug:
+      msg: "How do you do ?"
