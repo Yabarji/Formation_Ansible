@@ -1,23 +1,3 @@
- 1137  nano svc-app1.yaml
- 1138  kubectl apply -f nginx-deployment.yaml --validate
- 1139  kubectl get pods
- 1140  kubectl get svc
- 1141  kubectl delete svc svc-nginx
- 1142  kubectl delete svc svc-php73-2.yaml 
- 1143  kubectl delete svc svc-php73
- 1144  kubectl get svc
- 1145  kubectl apply -f nginx-deployment.yaml --validate
- 1146  kubectl get svc
- 1147  kubectl delete -f nginx-deployment.yaml
- 1148  kubectl apply -f svc-app1.yaml --validate
- 1149  kubectl get svc
- 1150  kubectl get svc,pods
- 1151  clear
- 1152  kubectl get svc,pods
- 1153  kubectl get svc
- 1154  kubectl get deployment
- 1155  clear
- 1156  kubectl get pods -o wide
  1157  kubectl get pods 
  1158  kubectl get pods
  1159  kubectl get svc
@@ -998,3 +978,23 @@
  2134  history > ~/Formation_Ansible/Command_History/History
  2135  history 
  2136  history > ~/Formation_Ansible/Command_History/History
+ 2137  git add Command_History/
+ 2138  git commit -am "First History command on terminal"
+ 2139  git push origin master 
+ 2140  ll
+ 2141  vim ansible.cfg 
+ 2142  git status
+ 2143  ansible-doc package
+ 2144  ansible -m package -a "name=apache2 state=present" all
+ 2145  ansible -m service -a "name=apache2 state=started enable=yes" all
+ 2146  ansible -m service -a "name=apache2 state=started enabled=yes" all
+ 2147  systemctl staus apache2
+ 2148  systemctl status apache2
+ 2149  ansible -m debug -a "var=ansible_host" all
+ 2150  cd files/
+ 2151  vi index.html
+ 2152  ansible -m file -a "src=index.html dest=/var/www/html/index.html" all
+ 2153  ansible -m file -a "src=index.html dest=/var/www/html/index2.html" all
+ 2154  cd ..
+ 2155  ansible -m copy -a "src=index.html dest=/var/www/html/index2.html" all
+ 2156  history > ~/Formation_Ansible/Command_History/History
