@@ -1,1000 +1,1000 @@
- 1157  kubectl get pods 
- 1158  kubectl get pods
- 1159  kubectl get svc
- 1160  kubectl apply -f nginx-deployment.yaml --validate
- 1161  kubectl get pods -o wide
- 1162  docker ls
- 1163  docker --help
- 1164  clear
- 1165  ll ../
- 1166  ll
- 1167  ll ../
- 1168  mv ../ingress.yaml .
+ 1004  kubectl get ingress,svc,endpoints
+ 1005  curl http://172.17.0.9:8443/index.html
+ 1006  curl https://172.17.0.9:8443/index.html
+ 1007  kubectl describe ingress nginx-ingress
+ 1008  kubectl get ingress
+ 1009  kubectl apply -f ingress.yaml.yaml --validate
+ 1010  kubectl apply -f ingress.yaml --validate
+ 1011  kubectl get ingress
+ 1012  kubectl describe ingress nginx-ingress
+ 1013  curl https://172.17.0.9:8443/index.html
+ 1014  curl http://172.17.0.9:8443/index.html
+ 1015  kubectl get ingress,svc,endpoints
+ 1016  mv ../tomcat-deployment.yaml .
+ 1017  cd Formation_Kubernetes/
+ 1018  cd wordpress/
+ 1019  ll
+ 1020  ll ../../
+ 1021  ls -ltr ../../
+ 1022  cd ..
+ 1023  ll
+ 1024  pwd
+ 1025  ip a
+ 1026  ll
+ 1027  cd Vagrant/
+ 1028  nano Vagrantfile 
+ 1029  nano k3
+ 1030  ll
+ 1031  nano k3s.cli 
+ 1032  nano Vagrantfile 
+ 1033  tmux attach
+ 1034  Ctrl-b c
+ 1035  pwd
+ 1036  cd Documents/Dawan/
+ 1037  pwd
+ 1038  cd ..
+ 1039  mkdir Formation_Vagrant
+ 1040  vagrant -h
+ 1041  clear
+ 1042  vagrant init --help
+ 1043  vagrant init -m
+ 1044  ll
+ 1045  nano Vagrantfile 
+ 1046  rm Vagrantfile 
+ 1047  ll
+ 1048  vagrant init -f
+ 1049  ll
+ 1050  nano Vagrantfile 
+ 1051  vagant up
+ 1052  vagrant up
+ 1053  cd Formation_Vagrant/
+ 1054  ll
+ 1055  mkdir Formation_Vagrant
+ 1056  cd Formation_Vagrant/
+ 1057  ll
+ 1058  vagrant init -f
+ 1059  ll
+ 1060  vagrant up
+ 1061  mkdir vagrant_getting_started
+ 1062  cd vagrant_getting_started
+ 1063  vagrant init hashicorp/bionic64
+ 1064  cd ..
+ 1065  git init
+ 1066  git config --global user.name "Yassen ABARJI"
+ 1067  git config --global user.email "Yabarji1@gmail.com"
+ 1068  nano Readme.md
+ 1069  git add .
+ 1070  git status
+ 1071  git commit -am "Initiation Vagrant"
+ 1072  git push origin master
+ 1073  git remote add origin git@github.com:Yabarji/Formation_Vagrant.git
+ 1074  git push origin master 
+ 1075  git push -f origin master 
+ 1076  vagrant init ubuntu/xenial
+ 1077  ll
+ 1078  rm 
+ 1079  vrm Vagrantfile 
+ 1080  vagrant init ubuntu/xenial
+ 1081  ll
+ 1082  rm Vagrantfile 
+ 1083  ll
+ 1084  vagrant init ubuntu/xenial64
+ 1085  git status
+ 1086  git add Vagrantfile
+ 1087  git commit -am "Modif fichier Vagrantfile"
+ 1088  git push origin master 
+ 1089  nano ~/.bashrc
+ 1090  vi ~/.bashrc
+ 1091  cd Formation_Vagrant/
+ 1092  cd /var/www/html
+ 1093  ll
+ 1094  vim index.html 
+ 1095  cd /tmp/vagrant/
+ 1096  ll
+ 1097  vim index.html
+ 1098  cd ~
+ 1099  cd Formation_Vagrant/
+ 1100  git add .
+ 1101  git commit -am "Creation d'une VM avec Vagrant"
+ 1102  git push origin demo_vagrant 
+ 1103  git branch demo_Packer
+ 1104  git checkout demo_Packer
+ 1105  packer
+ 1106  packer --version
+ 1107  vagrant package
+ 1108  ll
+ 1109  vagrant box list
+ 1110  ll
+ 1111  cd atelier2/
+ 1112  ll
+ 1113  vagrant package
+ 1114  ll
+ 1115  git add .
+ 1116  git status
+ 1117  git commit -am "Emaquetage VM avec Packer"
+ 1118  git push origin demo_Packer 
+ 1119  git push -f origin demo_Packer 
+ 1120  vagrant box add --name bionic/atelier2 ~/Formation_Vagrant/atelier2/package.box 
+ 1121  ll
+ 1122  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier2/package.box 
+ 1123  vagrant box list
+ 1124  vagrant --version
+ 1125  vi Vagrantfile 
+ 1126  pwd
+ 1127  cd ..
+ 1128  mkdir atelier-2_Bis
+ 1129  cp /home/stagiaire/Formation_Vagrant/atelier2/Vagrantfile .
+ 1130  ll
+ 1131  cp /home/stagiaire/Formation_Vagrant/atelier2/Vagrantfile /home/stagiaire/Formation_Vagrant/atelier-2_Bis/
+ 1132  cd atelier-2_Bis/
+ 1133  ll
+ 1134  vim Vagrantfileagra
+ 1135  vim Vagrantfile
+ 1136  vagrant up
+ 1137  vi Vagrantfile
+ 1138  vagrant up
+ 1139  vagrant halt
+ 1140  cd ..
+ 1141  vim Vagrantfile
+ 1142  ll
+ 1143  cd atelier-2_Bis/
+ 1144  ll
+ 1145  git init
+ 1146  git config global.name "Yassen ABARJI"
+ 1147  git config global.email "Yabarji1@gmail.com"
+ 1148  git add .
+ 1149  git commit -am "depoiement vm avec image vagrant tp atelier 2"
+ 1150  git checkout demo_Packer
+ 1151  git branch demo_Packer
+ 1152  git checkout demo_Packer
+ 1153  git push origine demo_Packer 
+ 1154  git remote git@github.com:Yabarji/Formation_Vagrant.git
+ 1155  git remote add git@github.com:Yabarji/Formation_Vagrant.git
+ 1156  cd ..
+ 1157  git add .
+ 1158  git push origine demo_Packer 
+ 1159  git push -f origine demo_Packer 
+ 1160  ll
+ 1161  git checkout demo_Vagrant
+ 1162  git checkout demo_vagrant 
+ 1163  git add.
+ 1164  git add .
+ 1165  git add atelier-2_Bis/
+ 1166  git commit -am "deploiement vm avec image vagrant tp atelier 2"
+ 1167  git push -f origine demo_vagrant 
+ 1168  cd atelier-2_Bis/
  1169  ll
- 1170  kubectl api-ressources|grep network
- 1171  kubectl api-resources|grep network
- 1172  kubectl get ingress,svc,endpoint
- 1173  kubectl get ingress,svc,endpoints
- 1174  curl http://172.17.0.9:8443/index.html
- 1175  curl https://172.17.0.9:8443/index.html
- 1176  kubectl describe ingress nginx-ingress
- 1177  kubectl get ingress
- 1178  kubectl apply -f ingress.yaml.yaml --validate
- 1179  kubectl apply -f ingress.yaml --validate
- 1180  kubectl get ingress
- 1181  kubectl describe ingress nginx-ingress
- 1182  curl https://172.17.0.9:8443/index.html
- 1183  curl http://172.17.0.9:8443/index.html
- 1184  kubectl get ingress,svc,endpoints
- 1185  mv ../tomcat-deployment.yaml .
- 1186  cd Formation_Kubernetes/
- 1187  cd wordpress/
+ 1170  rm - r .git/
+ 1171  rm -r .git/
+ 1172  rm .git/
+ 1173  sudo rm -r .git/
+ 1174  ll
+ 1175  cd ..
+ 1176  cd atelier2/
+ 1177  ll
+ 1178  cd ..
+ 1179  lll
+ 1180  ll
+ 1181  git add .
+ 1182  cd Formation_Vagrant/
+ 1183  cd atelier2/
+ 1184  ll
+ 1185  vi Vagrantfile
+ 1186  cd ..
+ 1187  cd atelier2
  1188  ll
- 1189  ll ../../
- 1190  ls -ltr ../../
- 1191  cd ..
- 1192  ll
- 1193  pwd
- 1194  ip a
- 1195  ll
- 1196  cd Vagrant/
- 1197  nano Vagrantfile 
- 1198  nano k3
+ 1189  vagrant package --output Bionic_Atelier --Vagrantfile ./Vagrantfile 
+ 1190  ll
+ 1191  vi package.box 
+ 1192  vi Bionic_Atelier 
+ 1193  cd Formation_Vagrant/
+ 1194  vi ~/.bashrc 
+ 1195  mkdir atelier2
+ 1196  cd atelier2/
+ 1197  ll
+ 1198  vagrant init hashicorp/bionic64
  1199  ll
- 1200  nano k3s.cli 
- 1201  nano Vagrantfile 
- 1202  tmux attach
- 1203  Ctrl-b c
- 1204  pwd
- 1205  cd Documents/Dawan/
- 1206  pwd
- 1207  cd ..
- 1208  mkdir Formation_Vagrant
- 1209  vagrant -h
- 1210  clear
- 1211  vagrant init --help
- 1212  vagrant init -m
- 1213  ll
- 1214  nano Vagrantfile 
- 1215  rm Vagrantfile 
- 1216  ll
- 1217  vagrant init -f
- 1218  ll
- 1219  nano Vagrantfile 
- 1220  vagant up
- 1221  vagrant up
- 1222  cd Formation_Vagrant/
- 1223  ll
- 1224  mkdir Formation_Vagrant
- 1225  cd Formation_Vagrant/
- 1226  ll
- 1227  vagrant init -f
- 1228  ll
- 1229  vagrant up
- 1230  mkdir vagrant_getting_started
- 1231  cd vagrant_getting_started
- 1232  vagrant init hashicorp/bionic64
- 1233  cd ..
- 1234  git init
- 1235  git config --global user.name "Yassen ABARJI"
- 1236  git config --global user.email "Yabarji1@gmail.com"
- 1237  nano Readme.md
- 1238  git add .
- 1239  git status
- 1240  git commit -am "Initiation Vagrant"
- 1241  git push origin master
- 1242  git remote add origin git@github.com:Yabarji/Formation_Vagrant.git
- 1243  git push origin master 
- 1244  git push -f origin master 
- 1245  vagrant init ubuntu/xenial
+ 1200  nano Vagrantfile 
+ 1201  ll
+ 1202  git branche demo_vagrant
+ 1203  git branch demo_vagrant
+ 1204  git checkout demo_vagrant 
+ 1205  mkdir /tmp/vagrant
+ 1206  ll
+ 1207  git add .
+ 1208  git commit -am "modification du fichier Vagrantfile par rapport Tp"
+ 1209  git push origin demo_vagrant 
+ 1210  vagrant up
+ 1211  git add Vagrantfile 
+ 1212  git commit -am "correctionmodification du fichier Vagrantfile"
+ 1213  git push origin demo_vagrant 
+ 1214  vagrant up
+ 1215  sudo apt-get install virtualbox-dkms
+ 1216  vagrant up
+ 1217  vagrant halt
+ 1218  vagrant up
+ 1219  vagrant halt
+ 1220  vagrant up
+ 1221  vagrant ssh
+ 1222  vagrant up
+ 1223  vagrant ssh
+ 1224  git add .
+ 1225  ll
+ 1226  cd ..
+ 1227  git add .
+ 1228  cd Formation_Vagrant/
+ 1229  git add .
+ 1230  git add . && git commit -am "deploiement vm vagrant creer dans tp atelier-2 avec Packer"
+ 1231  git push origin demo_vagrant 
+ 1232  vagrant halt
+ 1233  cd atelier2/
+ 1234  vagrant halt
+ 1235  ll
+ 1236  clear
+ 1237  ll
+ 1238  vagrant box list
+ 1239  ll
+ 1240  vagrant package
+ 1241  vagrant package --output atelier-2_bis --vagrantfile ./Vagranfile
+ 1242  vagrant package --output atelier-2_bis --vagrantfile ./Vagrantfile
+ 1243  ll
+ 1244  vagrant up
+ 1245  cd /tmp/vagrant/
  1246  ll
- 1247  rm 
- 1248  vrm Vagrantfile 
- 1249  vagrant init ubuntu/xenial
+ 1247  cat index.html 
+ 1248  nano foobar.html
+ 1249  cd Formation_Vagrant/
  1250  ll
- 1251  rm Vagrantfile 
+ 1251  touch .gitignore
  1252  ll
- 1253  vagrant init ubuntu/xenial64
- 1254  git status
- 1255  git add Vagrantfile
- 1256  git commit -am "Modif fichier Vagrantfile"
- 1257  git push origin master 
- 1258  nano ~/.bashrc
- 1259  vi ~/.bashrc
- 1260  cd Formation_Vagrant/
- 1261  cd /var/www/html
- 1262  ll
- 1263  vim index.html 
- 1264  cd /tmp/vagrant/
- 1265  ll
- 1266  vim index.html
- 1267  cd ~
- 1268  cd Formation_Vagrant/
- 1269  git add .
- 1270  git commit -am "Creation d'une VM avec Vagrant"
- 1271  git push origin demo_vagrant 
- 1272  git branch demo_Packer
- 1273  git checkout demo_Packer
- 1274  packer
- 1275  packer --version
- 1276  vagrant package
- 1277  ll
- 1278  vagrant box list
+ 1253  cd atelier-2_Bis/
+ 1254  packer build -force -var `user_name=foobar`  Packer.json 
+ 1255  ll
+ 1256  packer build -force -var `user_name=foobar`  Packer.json 
+ 1257  cd Formation_Vagrant/
+ 1258  mkdir revision_linux
+ 1259  cd revision_linux/
+ 1260  cd /
+ 1261  ls /
+ 1262  cd ~/Formation_Vagrant/revision_linux
+ 1263  ll /
+ 1264  echo $path
+ 1265  echo $PATH
+ 1266  type tree
+ 1267  pwd
+ 1268  echo $PWD
+ 1269  ls /etc/
+ 1270  ls /dev
+ 1271  ls $HOME
+ 1272  ls $HOME -a
+ 1273  env
+ 1274  type ls
+ 1275  type echo
+ 1276  type tree
+ 1277  mkdir test_dawan
+ 1278  touch coucu
  1279  ll
- 1280  cd atelier2/
- 1281  ll
- 1282  vagrant package
- 1283  ll
- 1284  git add .
- 1285  git status
- 1286  git commit -am "Emaquetage VM avec Packer"
- 1287  git push origin demo_Packer 
- 1288  git push -f origin demo_Packer 
- 1289  vagrant box add --name bionic/atelier2 ~/Formation_Vagrant/atelier2/package.box 
- 1290  ll
- 1291  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier2/package.box 
- 1292  vagrant box list
- 1293  vagrant --version
- 1294  vi Vagrantfile 
- 1295  pwd
- 1296  cd ..
- 1297  mkdir atelier-2_Bis
- 1298  cp /home/stagiaire/Formation_Vagrant/atelier2/Vagrantfile .
- 1299  ll
- 1300  cp /home/stagiaire/Formation_Vagrant/atelier2/Vagrantfile /home/stagiaire/Formation_Vagrant/atelier-2_Bis/
- 1301  cd atelier-2_Bis/
- 1302  ll
- 1303  vim Vagrantfileagra
- 1304  vim Vagrantfile
- 1305  vagrant up
- 1306  vi Vagrantfile
- 1307  vagrant up
- 1308  vagrant halt
- 1309  cd ..
- 1310  vim Vagrantfile
- 1311  ll
- 1312  cd atelier-2_Bis/
+ 1280  ls -lh
+ 1281  mv coucu coucou
+ 1282  mkdir foobar
+ 1283  ls -lh
+ 1284  chg
+ 1285  chown date
+ 1286  date
+ 1287  time
+ 1288  find
+ 1289  history
+ 1290  vim coucou 
+ 1291  cd /home/stagiaire/Formation_Vagrant/atelier-2_Bis
+ 1292  vagrant halt
+ 1293  cd /home/stagiaire/Formation_Kubernetes/Vagrant
+ 1294  vagrant halt
+ 1295  ll
+ 1296  pwd
+ 1297  ll
+ 1298  mv anim.js /var/www/html
+ 1299  sudo mv anim.js /var/www/html
+ 1300  sudo mv index.html /var/www/html
+ 1301  sudo mv style.css /var/www/html
+ 1302  cd Formation_Vagrant/
+ 1303  ll
+ 1304  cd Formation_V
+ 1305  cd Formation_Vagrant/
+ 1306  cd atelier-2_Bis/
+ 1307  vagrnat box list
+ 1308  vagrant box list
+ 1309  vagrant box add --name atelierBionic package.box
+ 1310  ll
+ 1311  atom Vagrantfile 
+ 1312  vagrant box add --name atelierBionic package.box
  1313  ll
- 1314  git init
- 1315  git config global.name "Yassen ABARJI"
- 1316  git config global.email "Yabarji1@gmail.com"
- 1317  git add .
- 1318  git commit -am "depoiement vm avec image vagrant tp atelier 2"
- 1319  git checkout demo_Packer
- 1320  git branch demo_Packer
- 1321  git checkout demo_Packer
- 1322  git push origine demo_Packer 
- 1323  git remote git@github.com:Yabarji/Formation_Vagrant.git
- 1324  git remote add git@github.com:Yabarji/Formation_Vagrant.git
- 1325  cd ..
- 1326  git add .
- 1327  git push origine demo_Packer 
- 1328  git push -f origine demo_Packer 
- 1329  ll
- 1330  git checkout demo_Vagrant
- 1331  git checkout demo_vagrant 
- 1332  git add.
- 1333  git add .
- 1334  git add atelier-2_Bis/
- 1335  git commit -am "deploiement vm avec image vagrant tp atelier 2"
- 1336  git push -f origine demo_vagrant 
- 1337  cd atelier-2_Bis/
- 1338  ll
- 1339  rm - r .git/
- 1340  rm -r .git/
- 1341  rm .git/
- 1342  sudo rm -r .git/
- 1343  ll
- 1344  cd ..
- 1345  cd atelier2/
- 1346  ll
- 1347  cd ..
- 1348  lll
- 1349  ll
- 1350  git add .
- 1351  cd Formation_Vagrant/
- 1352  cd atelier2/
- 1353  ll
- 1354  vi Vagrantfile
- 1355  cd ..
- 1356  cd atelier2
- 1357  ll
- 1358  vagrant package --output Bionic_Atelier --Vagrantfile ./Vagrantfile 
- 1359  ll
- 1360  vi package.box 
- 1361  vi Bionic_Atelier 
- 1362  cd Formation_Vagrant/
- 1363  vi ~/.bashrc 
- 1364  mkdir atelier2
- 1365  cd atelier2/
- 1366  ll
- 1367  vagrant init hashicorp/bionic64
- 1368  ll
- 1369  nano Vagrantfile 
- 1370  ll
- 1371  git branche demo_vagrant
- 1372  git branch demo_vagrant
- 1373  git checkout demo_vagrant 
- 1374  mkdir /tmp/vagrant
- 1375  ll
- 1376  git add .
- 1377  git commit -am "modification du fichier Vagrantfile par rapport Tp"
- 1378  git push origin demo_vagrant 
- 1379  vagrant up
- 1380  git add Vagrantfile 
- 1381  git commit -am "correctionmodification du fichier Vagrantfile"
- 1382  git push origin demo_vagrant 
- 1383  vagrant up
- 1384  sudo apt-get install virtualbox-dkms
- 1385  vagrant up
- 1386  vagrant halt
- 1387  vagrant up
- 1388  vagrant halt
- 1389  vagrant up
- 1390  vagrant ssh
- 1391  vagrant up
- 1392  vagrant ssh
+ 1314  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/package.box
+ 1315  vagrant package
+ 1316  clear
+ 1317  ll
+ 1318  git push origin demo_vagrant 
+ 1319  git push -f origin demo_vagrant 
+ 1320  vagrant halt
+ 1321  clear
+ 1322  ll
+ 1323  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier2/package.box
+ 1324  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/package.box
+ 1325  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/
+ 1326  git checkout master 
+ 1327  clear
+ 1328  git status
+ 1329  clear
+ 1330  ll
+ 1331  vim Vagrantfile 
+ 1332  vagrant nbox list
+ 1333  vagrant box list
+ 1334  vim Vagrantfile 
+ 1335  vagrant up
+ 1336  vagrant ssh
+ 1337  curl localhost:8085
+ 1338  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier-2_Bis/package.box
+ 1339  ll
+ 1340  vagrant box add --name bionic_atelier2 package.box
+ 1341  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier2/package.box
+ 1342  vagrant box add --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/package.box
+ 1343  vagrant box add --name bionic_atelier-2 ~/Formation_Vagrant/atelier-2_Bis/package.box
+ 1344  vagrant box add -f --name bionic_atelier-2
+ 1345  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier-2_Bis/package.box
+ 1346  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/package.box
+ 1347  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/atelier-2_bis 
+ 1348  vagrant box list
+ 1349  vagrant bionic_atelier-2
+ 1350  vagrant init bionic_atelier-2
+ 1351  vagrant up
+ 1352  curl localhost:8085
+ 1353  vagrant halt
+ 1354  nano /var/www/html/index.html 
+ 1355  vagrant box list
+ 1356  vagrant init bionic_atelier-2
+ 1357  vagrant up
+ 1358  vagrant halt
+ 1359  vagrant up
+ 1360  vagrant ssh
+ 1361  packer
+ 1362  packer --version
+ 1363  ll
+ 1364  nano Packer.json
+ 1365  touch Packer.json
+ 1366  nano Packer.json
+ 1367  id
+ 1368  packer validate
+ 1369  packer validate Packer.json 
+ 1370  cd /var/www/html/
+ 1371  ll
+ 1372  cp index.html foobar.html
+ 1373  sudo cp index.html foobar.html
+ 1374  ll
+ 1375  sudo vi foobar.html 
+ 1376  packer validate Packer.json 
+ 1377  cd ~
+ 1378  cd Formation_Vagrant/atelier-2_Bis/
+ 1379  ll
+ 1380  packer validate Packer.json 
+ 1381  ll
+ 1382  nano ./foobar.html
+ 1383  packer validate Packer.json 
+ 1384  packer build Packer.json
+ 1385  packer validate Packer.json 
+ 1386  packer build -f Packer.json
+ 1387  packer build -force Packer.json
+ 1388  git push origin demo_vagrant 
+ 1389  git 
+ 1390  git commit -am "packer"
+ 1391  git push origin demo_vagrant 
+ 1392  git reset --hard
  1393  git add .
- 1394  ll
- 1395  cd ..
- 1396  git add .
- 1397  cd Formation_Vagrant/
- 1398  git add .
- 1399  git add . && git commit -am "deploiement vm vagrant creer dans tp atelier-2 avec Packer"
- 1400  git push origin demo_vagrant 
- 1401  vagrant halt
- 1402  cd atelier2/
- 1403  vagrant halt
- 1404  ll
- 1405  clear
- 1406  ll
- 1407  vagrant box list
- 1408  ll
- 1409  vagrant package
- 1410  vagrant package --output atelier-2_bis --vagrantfile ./Vagranfile
- 1411  vagrant package --output atelier-2_bis --vagrantfile ./Vagrantfile
- 1412  ll
- 1413  vagrant up
- 1414  cd /tmp/vagrant/
- 1415  ll
- 1416  cat index.html 
- 1417  nano foobar.html
- 1418  cd Formation_Vagrant/
- 1419  ll
- 1420  touch .gitignore
- 1421  ll
- 1422  cd atelier-2_Bis/
- 1423  packer build -force -var `user_name=foobar`  Packer.json 
- 1424  ll
- 1425  packer build -force -var `user_name=foobar`  Packer.json 
- 1426  cd Formation_Vagrant/
- 1427  mkdir revision_linux
- 1428  cd revision_linux/
- 1429  cd /
- 1430  ls /
- 1431  cd ~/Formation_Vagrant/revision_linux
- 1432  ll /
- 1433  echo $path
- 1434  echo $PATH
- 1435  type tree
- 1436  pwd
- 1437  echo $PWD
- 1438  ls /etc/
- 1439  ls /dev
- 1440  ls $HOME
- 1441  ls $HOME -a
- 1442  env
- 1443  type ls
- 1444  type echo
- 1445  type tree
- 1446  mkdir test_dawan
- 1447  touch coucu
- 1448  ll
- 1449  ls -lh
- 1450  mv coucu coucou
- 1451  mkdir foobar
- 1452  ls -lh
- 1453  chg
- 1454  chown date
- 1455  date
- 1456  time
- 1457  find
- 1458  history
- 1459  vim coucou 
- 1460  cd /home/stagiaire/Formation_Vagrant/atelier-2_Bis
- 1461  vagrant halt
- 1462  cd /home/stagiaire/Formation_Kubernetes/Vagrant
- 1463  vagrant halt
- 1464  ll
- 1465  pwd
- 1466  ll
- 1467  mv anim.js /var/www/html
- 1468  sudo mv anim.js /var/www/html
- 1469  sudo mv index.html /var/www/html
- 1470  sudo mv style.css /var/www/html
- 1471  cd Formation_Vagrant/
- 1472  ll
- 1473  cd Formation_V
- 1474  cd Formation_Vagrant/
- 1475  cd atelier-2_Bis/
- 1476  vagrnat box list
- 1477  vagrant box list
- 1478  vagrant box add --name atelierBionic package.box
- 1479  ll
- 1480  atom Vagrantfile 
- 1481  vagrant box add --name atelierBionic package.box
- 1482  ll
- 1483  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/package.box
- 1484  vagrant package
- 1485  clear
- 1486  ll
- 1487  git push origin demo_vagrant 
- 1488  git push -f origin demo_vagrant 
- 1489  vagrant halt
- 1490  clear
- 1491  ll
- 1492  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier2/package.box
- 1493  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/package.box
- 1494  vagrant box add --name atelierBionic ~/Formation_Vagrant/atelier-2_Bis/
- 1495  git checkout master 
- 1496  clear
- 1497  git status
- 1498  clear
- 1499  ll
- 1500  vim Vagrantfile 
- 1501  vagrant nbox list
- 1502  vagrant box list
- 1503  vim Vagrantfile 
- 1504  vagrant up
- 1505  vagrant ssh
- 1506  curl localhost:8085
- 1507  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier-2_Bis/package.box
- 1508  ll
- 1509  vagrant box add --name bionic_atelier2 package.box
- 1510  vagrant box add --name bionic_atelier2 ~/Formation_Vagrant/atelier2/package.box
- 1511  vagrant box add --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/package.box
- 1512  vagrant box add --name bionic_atelier-2 ~/Formation_Vagrant/atelier-2_Bis/package.box
- 1513  vagrant box add -f --name bionic_atelier-2
- 1514  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier-2_Bis/package.box
- 1515  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/package.box
- 1516  vagrant box add -f --name bionic_atelier-2 ~/Formation_Vagrant/atelier2/atelier-2_bis 
- 1517  vagrant box list
- 1518  vagrant bionic_atelier-2
- 1519  vagrant init bionic_atelier-2
- 1520  vagrant up
- 1521  curl localhost:8085
- 1522  vagrant halt
- 1523  nano /var/www/html/index.html 
- 1524  vagrant box list
- 1525  vagrant init bionic_atelier-2
- 1526  vagrant up
- 1527  vagrant halt
- 1528  vagrant up
- 1529  vagrant ssh
- 1530  packer
- 1531  packer --version
- 1532  ll
- 1533  nano Packer.json
- 1534  touch Packer.json
- 1535  nano Packer.json
- 1536  id
- 1537  packer validate
- 1538  packer validate Packer.json 
- 1539  cd /var/www/html/
- 1540  ll
- 1541  cp index.html foobar.html
- 1542  sudo cp index.html foobar.html
- 1543  ll
- 1544  sudo vi foobar.html 
- 1545  packer validate Packer.json 
- 1546  cd ~
- 1547  cd Formation_Vagrant/atelier-2_Bis/
- 1548  ll
- 1549  packer validate Packer.json 
- 1550  ll
- 1551  nano ./foobar.html
- 1552  packer validate Packer.json 
- 1553  packer build Packer.json
- 1554  packer validate Packer.json 
- 1555  packer build -f Packer.json
- 1556  packer build -force Packer.json
- 1557  git push origin demo_vagrant 
- 1558  git 
- 1559  git commit -am "packer"
- 1560  git push origin demo_vagrant 
- 1561  git reset --hard
- 1562  git add .
- 1563  git commit -am "packer"
- 1564  git push origin demo_vagrant 
- 1565  vagrant global -status
- 1566  vagrant global-status
- 1567  history
- 1568  cd Formation_Vagrant/
- 1569  ll
- 1570  cd atelier2
- 1571  vagrant halt
- 1572  vagrant up
- 1573  vagrant ssh
- 1574  vagrant up
- 1575  curl localhost:8085
- 1576  vagrant halt
- 1577  cclear
- 1578  cd ..
- 1579  git --help
- 1580  git log
- 1581  cd atelier2/
- 1582  ll
- 1583  git log -1 -p
- 1584  git log -2 -p
- 1585  git log -3 -p
- 1586  git push origin demo_vagrant 
- 1587  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
- 1588  cd ..
- 1589  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
- 1590  git status
- 1591  vim .gitignore 
- 1592  git add .gitignore
- 1593  git add atelier-2_Bis/Packer.json 
- 1594  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
- 1595  git push -all
- 1596  git push -f --all
- 1597  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2" HEAD
+ 1394  git commit -am "packer"
+ 1395  git push origin demo_vagrant 
+ 1396  vagrant global -status
+ 1397  vagrant global-status
+ 1398  history
+ 1399  cd Formation_Vagrant/
+ 1400  ll
+ 1401  cd atelier2
+ 1402  vagrant halt
+ 1403  vagrant up
+ 1404  vagrant ssh
+ 1405  vagrant up
+ 1406  curl localhost:8085
+ 1407  vagrant halt
+ 1408  cclear
+ 1409  cd ..
+ 1410  git --help
+ 1411  git log
+ 1412  cd atelier2/
+ 1413  ll
+ 1414  git log -1 -p
+ 1415  git log -2 -p
+ 1416  git log -3 -p
+ 1417  git push origin demo_vagrant 
+ 1418  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
+ 1419  cd ..
+ 1420  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
+ 1421  git status
+ 1422  vim .gitignore 
+ 1423  git add .gitignore
+ 1424  git add atelier-2_Bis/Packer.json 
+ 1425  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
+ 1426  git push -all
+ 1427  git push -f --all
+ 1428  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2" HEAD
+ 1429  ll
+ 1430  cd atelier2/
+ 1431  ll
+ 1432  cd ..
+ 1433  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier-2_bis" HEAD
+ 1434  git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch " HEAD
+ 1435  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/atelier-2_bis" HEAD
+ 1436  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/atelier-2_bis.box" HEAD
+ 1437  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/package.box" HEAD
+ 1438  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier.box" HEAD
+ 1439  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
+ 1440  git push origine demo_vagrant 
+ 1441  git push origin demo_vagrant 
+ 1442  ll
+ 1443  nano .gitignore 
+ 1444  mkdir Provisionnement_Vagrant
+ 1445  cd Provisionnement_Vagrant/
+ 1446  pwd
+ 1447  cd ..
+ 1448  cd atelier
+ 1449  ll
+ 1450  cp Vagrantfile /home/stagiaire/Formation_Vagrant/Provisionnement_Vagrant
+ 1451  cd Provisionnement_Vagrant/
+ 1452  ll
+ 1453  nano Vagrantfile 
+ 1454  vi Vagrantfile 
+ 1455  git add .
+ 1456  git commit -am "creation du VagrantFile Tp Atelier 5 -  Multi-Instance"
+ 1457  git push origin demo_vagrant 
+ 1458  vagrant up
+ 1459  vagrant reload
+ 1460  vagrant up
+ 1461  vagrant provision db
+ 1462  vagrant up
+ 1463  vagrant provision db
+ 1464  vagrant provision web
+ 1465  vagrant halt
+ 1466  vagrant destroy
+ 1467  vagrant up
+ 1468  vagrant global-status
+ 1469  vagrant up
+ 1470  vagrant ssh
+ 1471  vagrant up
+ 1472  vagrant ssh
+ 1473  git add .
+ 1474  git commit -am "creation Multi-Instance avec Vagrant (ajout reseaux privé)"
+ 1475  git push origin demo_vagrant 
+ 1476  vagrant provision web
+ 1477  vagrant provision db
+ 1478  vagrant ssh
+ 1479  vagrant up
+ 1480  vagrant provision db
+ 1481  vagrant provision web
+ 1482  vagrant ssh
+ 1483  git add .
+ 1484  git status
+ 1485  git commit -am "Multi Instance"
+ 1486  git push origin demo_vagrant 
+ 1487  git push -f origin demo_vagrant 
+ 1488  vagrant halt
+ 1489  vagrant up
+ 1490  vagrant provision web
+ 1491  vagrant provision db
+ 1492  terraform --version
+ 1493  vagrant ssh
+ 1494  vagrant global-status
+ 1495  vagrant reload web
+ 1496  ip a
+ 1497  vagrant up
+ 1498  cd ..
+ 1499  cd Formation_Vagrant/
+ 1500  mkdir Atelier_Terreform
+ 1501  cd Atelier_Terreform/
+ 1502  terraform 0.12upgrade
+ 1503  terraform 0.12 upgrade
+ 1504  terraform 0.12checklist
+ 1505  terraform 0.12upgrade
+ 1506  terraform init -get-plugins=true -reconfigure
+ 1507  sudo terraform 0.12upgrade
+ 1508  sudo terraform 0.12upgrade apply
+ 1509  sudo terraform 0.12upgrade --apply
+ 1510  sudo terraform 0.12upgrade -apply
+ 1511  clear
+ 1512  sudo apt update -y && sudo apt upgrade -y
+ 1513  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+ 1514  sudo unzip ./terraform_0.12.24_linux_amd64.zip -d /usr/local/bin
+ 1515  terraform -v
+ 1516  ls ~/terraform/
+ 1517  cd Formation_Vagrant/Atelier_Terreform/
+ 1518  source credentials.sh
+ 1519  nano credentials.sh
+ 1520  vim main.tf 
+ 1521  git add .
+ 1522  nano credentials.sh
+ 1523  vim main.tf 
+ 1524  git add .
+ 1525  git commit -am "scaleway_instance_server (de type DEV1-S) avec image Ubuntu 20.04, nommer Yassen-01"
+ 1526  git push origin demo_vagrant 
+ 1527  vim main.tf 
+ 1528  terraform validate
+ 1529  vim main.tf 
+ 1530  terraform validate
+ 1531  vim main.tf 
+ 1532  terraform validate
+ 1533  vim main.tf 
+ 1534  terraform validate
+ 1535  source credentials.sh
+ 1536  terraform init
+ 1537  vim main.tf 
+ 1538  cd Formation_Vagrant/Atelier_Terreform/
+ 1539  terraform validate
+ 1540  source credentials.sh 
+ 1541  terraform validate
+ 1542  terraform plan
+ 1543  terraform init
+ 1544  terraform plan
+ 1545  vim main.tf 
+ 1546  terraform validate
+ 1547  Error: Missing required argument
+ 1548  The argument "image" is required, but no definition was found.
+ 1549  Error: Missing required argument
+ 1550  The argument "type" is required, but no definition was found.
+ 1551  vim main.tf 
+ 1552  terraform validate
+ 1553  source credentials.sh 
+ 1554  terraform validate
+ 1555  terraform init
+ 1556  terraform plan
+ 1557  vim main.tf 
+ 1558  terraform validate
+ 1559  source credentials.sh 
+ 1560  terraform init
+ 1561  terraform plan
+ 1562  vim main.tf 
+ 1563  terraform validate
+ 1564  vim main.tf 
+ 1565  terraform validate
+ 1566  vim main.tf 
+ 1567  terraform validate
+ 1568  vim main.tf 
+ 1569  terraform validate
+ 1570  ll
+ 1571  rm .terraform/
+ 1572  rm -rf .terraform/
+ 1573  ll
+ 1574  terraform validate
+ 1575  terraform init
+ 1576  terraform validate
+ 1577  vim main.tf 
+ 1578  terraform validate
+ 1579  terraform plan
+ 1580  terraform apply
+ 1581  env|grep -i scw
+ 1582  vim main.tf 
+ 1583  cd Formation_V
+ 1584  cd Formation_Vagrant/
+ 1585  ll
+ 1586  nano .gitignore 
+ 1587  cd atelier
+ 1588  cd Atelier_Terreform/
+ 1589  vim main.tf 
+ 1590  cd /var/www/html/
+ 1591  ll
+ 1592  cat index.html 
+ 1593  cd ~
+ 1594  pwd
+ 1595  cd Formation_Vagrant/
+ 1596  ll
+ 1597  cd Atelier_Terreform/
  1598  ll
- 1599  cd atelier2/
- 1600  ll
- 1601  cd ..
- 1602  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier-2_bis" HEAD
- 1603  git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch " HEAD
- 1604  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/atelier-2_bis" HEAD
- 1605  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/atelier-2_bis.box" HEAD
- 1606  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/package.box" HEAD
- 1607  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier.box" HEAD
- 1608  git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch atelier2/Bionic_Atelier" HEAD
- 1609  git push origine demo_vagrant 
- 1610  git push origin demo_vagrant 
- 1611  ll
- 1612  nano .gitignore 
- 1613  mkdir Provisionnement_Vagrant
- 1614  cd Provisionnement_Vagrant/
- 1615  pwd
- 1616  cd ..
- 1617  cd atelier
- 1618  ll
- 1619  cp Vagrantfile /home/stagiaire/Formation_Vagrant/Provisionnement_Vagrant
- 1620  cd Provisionnement_Vagrant/
- 1621  ll
- 1622  nano Vagrantfile 
- 1623  vi Vagrantfile 
- 1624  git add .
- 1625  git commit -am "creation du VagrantFile Tp Atelier 5 -  Multi-Instance"
- 1626  git push origin demo_vagrant 
- 1627  vagrant up
- 1628  vagrant reload
- 1629  vagrant up
- 1630  vagrant provision db
- 1631  vagrant up
- 1632  vagrant provision db
- 1633  vagrant provision web
- 1634  vagrant halt
- 1635  vagrant destroy
- 1636  vagrant up
- 1637  vagrant global-status
- 1638  vagrant up
- 1639  vagrant ssh
- 1640  vagrant up
- 1641  vagrant ssh
- 1642  git add .
- 1643  git commit -am "creation Multi-Instance avec Vagrant (ajout reseaux privé)"
- 1644  git push origin demo_vagrant 
- 1645  vagrant provision web
- 1646  vagrant provision db
- 1647  vagrant ssh
- 1648  vagrant up
- 1649  vagrant provision db
- 1650  vagrant provision web
- 1651  vagrant ssh
- 1652  git add .
- 1653  git status
- 1654  git commit -am "Multi Instance"
- 1655  git push origin demo_vagrant 
- 1656  git push -f origin demo_vagrant 
- 1657  vagrant halt
- 1658  vagrant up
- 1659  vagrant provision web
- 1660  vagrant provision db
- 1661  terraform --version
- 1662  vagrant ssh
- 1663  vagrant global-status
- 1664  vagrant reload web
- 1665  ip a
- 1666  vagrant up
- 1667  cd ..
- 1668  cd Formation_Vagrant/
- 1669  mkdir Atelier_Terreform
- 1670  cd Atelier_Terreform/
- 1671  terraform 0.12upgrade
- 1672  terraform 0.12 upgrade
- 1673  terraform 0.12checklist
- 1674  terraform 0.12upgrade
- 1675  terraform init -get-plugins=true -reconfigure
- 1676  sudo terraform 0.12upgrade
- 1677  sudo terraform 0.12upgrade apply
- 1678  sudo terraform 0.12upgrade --apply
- 1679  sudo terraform 0.12upgrade -apply
- 1680  clear
- 1681  sudo apt update -y && sudo apt upgrade -y
- 1682  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
- 1683  sudo unzip ./terraform_0.12.24_linux_amd64.zip -d /usr/local/bin
- 1684  terraform -v
- 1685  ls ~/terraform/
- 1686  cd Formation_Vagrant/Atelier_Terreform/
- 1687  source credentials.sh
- 1688  nano credentials.sh
- 1689  vim main.tf 
- 1690  git add .
- 1691  nano credentials.sh
- 1692  vim main.tf 
- 1693  git add .
- 1694  git commit -am "scaleway_instance_server (de type DEV1-S) avec image Ubuntu 20.04, nommer Yassen-01"
- 1695  git push origin demo_vagrant 
- 1696  vim main.tf 
- 1697  terraform validate
- 1698  vim main.tf 
- 1699  terraform validate
- 1700  vim main.tf 
- 1701  terraform validate
- 1702  vim main.tf 
- 1703  terraform validate
- 1704  source credentials.sh
- 1705  terraform init
- 1706  vim main.tf 
- 1707  cd Formation_Vagrant/Atelier_Terreform/
- 1708  terraform validate
- 1709  source credentials.sh 
- 1710  terraform validate
- 1711  terraform plan
- 1712  terraform init
- 1713  terraform plan
- 1714  vim main.tf 
- 1715  terraform validate
- 1716  Error: Missing required argument
- 1717  The argument "image" is required, but no definition was found.
- 1718  Error: Missing required argument
- 1719  The argument "type" is required, but no definition was found.
- 1720  vim main.tf 
- 1721  terraform validate
- 1722  source credentials.sh 
- 1723  terraform validate
- 1724  terraform init
- 1725  terraform plan
- 1726  vim main.tf 
- 1727  terraform validate
- 1728  source credentials.sh 
- 1729  terraform init
- 1730  terraform plan
- 1731  vim main.tf 
- 1732  terraform validate
- 1733  vim main.tf 
- 1734  terraform validate
- 1735  vim main.tf 
- 1736  terraform validate
- 1737  vim main.tf 
- 1738  terraform validate
- 1739  ll
- 1740  rm .terraform/
- 1741  rm -rf .terraform/
- 1742  ll
- 1743  terraform validate
- 1744  terraform init
- 1745  terraform validate
- 1746  vim main.tf 
- 1747  terraform validate
- 1748  terraform plan
- 1749  terraform apply
- 1750  env|grep -i scw
- 1751  vim main.tf 
- 1752  cd Formation_V
- 1753  cd Formation_Vagrant/
+ 1599  nano credentials.sh 
+ 1600  atom credentials.sh 
+ 1601  vim credentials.sh 
+ 1602  vim main.tf
+ 1603  cd Formation_Vagrant/Atelier_Terreform/
+ 1604  vim main.tf 
+ 1605  ll$
+ 1606  ll
+ 1607  rm .main.tf.swp 
+ 1608  ll
+ 1609  vim main.tf 
+ 1610  terraform apply
+ 1611  env|grep -i scw
+ 1612  source credentials.sh 
+ 1613  terraform apply
+ 1614  env|grep -i scw
+ 1615  vim main.tf 
+ 1616  terraform validate
+ 1617  terraform plan
+ 1618  terraform apply
+ 1619  vim main.tf 
+ 1620  env|grep -i 
+ 1621  vim main.tf 
+ 1622  terraform validate
+ 1623  terraform plan
+ 1624  terraform apply
+ 1625  vim main.tf 
+ 1626  terraform validate
+ 1627  terraform apply
+ 1628  vim main.tf 
+ 1629  terraform validate
+ 1630  vim main.tf 
+ 1631  terraform validate
+ 1632  terraform plan
+ 1633  terraform apply
+ 1634  git add .
+ 1635  terraform destroy
+ 1636  vim main.tf 
+ 1637  terraform validate
+ 1638  terraform apply
+ 1639  vim main.tf 
+ 1640  terraform -version
+ 1641  vim main.tf 
+ 1642  terraform validate
+ 1643  vim main.tf 
+ 1644  terraform validate
+ 1645  vim main.tf 
+ 1646  terraform validate
+ 1647  vim main.tf 
+ 1648  terraform validate
+ 1649  vim main.tf 
+ 1650  terraform validate
+ 1651  terraform apply
+ 1652  terraform destroy
+ 1653  cd Formation_Vagrant/Atelier_Terreform/
+ 1654  vim main.tf 
+ 1655  sudo snap install vlc
+ 1656  sudo apt-get install ubuntu-restricted-extras
+ 1657  sudo apt-get install libavcodec54 libav-tools ffmpeg
+ 1658  sudo apt-get install gstreamer1.0-libav gstreamer0.10-ffmpeg
+ 1659  sudo apt install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
+ 1660  sudo apt install ubuntu-restricted-extras
+ 1661  sudo apt-get install gstreamer1.0-plugins-bad
+ 1662  rm -R ~/.cache/gstreamer-1.0
+ 1663  cd Documents/
+ 1664  ll
+ 1665  cpdf Helico.pdf 1-3,12 -o Helicocout.pdf
+ 1666  ll
+ 1667  cd Documents/ENIDownloader-master/
+ 1668  ll
+ 1669  ./crawl.sh 
+ 1670  sudo apt-get update
+ 1671  sudo apt-get install build-essential chrpath libssl-dev libxft-dev -y
+ 1672  sudo apt-get install libfreetype6 libfreetype6-dev -y
+ 1673  sudo apt-get install libfontconfig1 libfontconfig1-dev -y
+ 1674  cd ~
+ 1675  export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
+ 1676  wget https://github.com/Medium/phantomjs/releases/download/v2.1.1/$PHANTOM_JS.tar.bz2
+ 1677  sudo tar xvjf $PHANTOM_JS.tar.bz2
+ 1678  sudo mv $PHANTOM_JS /usr/local/share
+ 1679  sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
+ 1680  phantomjs --version
+ 1681  cd /usr/local/share
+ 1682  sudo wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2
+ 1683  cd /var/www/
+ 1684  git clone git://github.com/n1k0/casperjs.git
+ 1685  sudo git clone git://github.com/n1k0/casperjs.git
+ 1686  cd casperjs
+ 1687  sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
+ 1688  rm phantomjs-1.9.2-linux-x86_64.tar.bz2
+ 1689  cd /usr/local/share
+ 1690  rm phantomjs-1.9.2-linux-x86_64.tar.bz2
+ 1691  ll
+ 1692  cd /usr/local/share
+ 1693  casperjs -version
+ 1694  casperjs --version
+ 1695  cd ~/Documents/cpdf-binaries-master/
+ 1696  cd Linux-Intel-64bit/
+ 1697  ./cpdf 
+ 1698  ./cpdf --help
+ 1699  sudo cp cpdf /usr/local/bin/
+ 1700  cd ../..
+ 1701  cpdf Helico.pdf 1-3,12-end -o Helicout.pdf
+ 1702  ./crawl.sh 
+ 1703  cd ENIDownloader-master/
+ 1704  ll
+ 1705  ./crawl.sh 
+ 1706  cpdf Helico.pdf 1-3,12 -o Helicocout.pdf
+ 1707  ./crawl.sh 
+ 1708  which casperjs 
+ 1709  cd /usr/local/bin/casperjs
+ 1710  cd /usr/local/bin/
+ 1711  ll
+ 1712  cd /var/www/casperjs/bin/casperjs
+ 1713  wich phantomjs 
+ 1714  which phantomjs 
+ 1715  cd /usr/local/bin/
+ 1716  ll
+ 1717  cd /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+ 1718  cd /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/
+ 1719  ll
+ 1720  phantomjs
+ 1721  which docs
+ 1722  sudo apt install phantomjs 
+ 1723  ll
+ 1724  which docs
+ 1725  sudo apt install casperjs
+ 1726  cd ~/Documents/Eni/ENIDownloader-master/
+ 1727  ./crawl.sh 
+ 1728  which /platform/casper.js
+ 1729  clear
+ 1730  cd Formation_Vagrant/
+ 1731  ll
+ 1732  vim Vagrantfile 
+ 1733  pwd
+ 1734  cd ..
+ 1735  mkdir Mise_en_Vagrant.configure("2") do |config|situation
+ 1736  mkdir Mise_en_situation-2
+ 1737  ll
+ 1738  ll /home/stagiaire/Formation_Vagrant
+ 1739  cd Mise_en_situation-2/
+ 1740  cp /home/stagiaire/Formation_Vagrant/Vagrantfile .
+ 1741  ll
+ 1742  vim Vagrantfile 
+ 1743  ll
+ 1744  cd ..
+ 1745  ll
+ 1746  vim Vagrantfile 
+ 1747  fping -qag 81.1.8.98/24
+ 1748  ll
+ 1749  cd Mise_en_situation-2/
+ 1750  ll
+ 1751  vagrant init
+ 1752  rm -f Vagrantfile 
+ 1753  vagrant init
  1754  ll
- 1755  nano .gitignore 
- 1756  cd atelier
- 1757  cd Atelier_Terreform/
- 1758  vim main.tf 
- 1759  cd /var/www/html/
- 1760  ll
- 1761  cat index.html 
- 1762  cd ~
- 1763  pwd
- 1764  cd Formation_Vagrant/
- 1765  ll
- 1766  cd Atelier_Terreform/
- 1767  ll
- 1768  nano credentials.sh 
- 1769  atom credentials.sh 
- 1770  vim credentials.sh 
- 1771  vim main.tf
- 1772  cd Formation_Vagrant/Atelier_Terreform/
- 1773  vim main.tf 
- 1774  ll$
- 1775  ll
- 1776  rm .main.tf.swp 
- 1777  ll
- 1778  vim main.tf 
- 1779  terraform apply
- 1780  env|grep -i scw
- 1781  source credentials.sh 
- 1782  terraform apply
- 1783  env|grep -i scw
- 1784  vim main.tf 
- 1785  terraform validate
- 1786  terraform plan
- 1787  terraform apply
- 1788  vim main.tf 
- 1789  env|grep -i 
- 1790  vim main.tf 
- 1791  terraform validate
- 1792  terraform plan
- 1793  terraform apply
- 1794  vim main.tf 
- 1795  terraform validate
- 1796  terraform apply
- 1797  vim main.tf 
- 1798  terraform validate
- 1799  vim main.tf 
- 1800  terraform validate
- 1801  terraform plan
- 1802  terraform apply
- 1803  git add .
- 1804  terraform destroy
- 1805  vim main.tf 
- 1806  terraform validate
- 1807  terraform apply
- 1808  vim main.tf 
- 1809  terraform -version
- 1810  vim main.tf 
- 1811  terraform validate
- 1812  vim main.tf 
- 1813  terraform validate
- 1814  vim main.tf 
- 1815  terraform validate
- 1816  vim main.tf 
- 1817  terraform validate
- 1818  vim main.tf 
- 1819  terraform validate
- 1820  terraform apply
- 1821  terraform destroy
- 1822  cd Formation_Vagrant/Atelier_Terreform/
- 1823  vim main.tf 
- 1824  sudo snap install vlc
- 1825  sudo apt-get install ubuntu-restricted-extras
- 1826  sudo apt-get install libavcodec54 libav-tools ffmpeg
- 1827  sudo apt-get install gstreamer1.0-libav gstreamer0.10-ffmpeg
- 1828  sudo apt install libdvdnav4 libdvdread4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
- 1829  sudo apt install ubuntu-restricted-extras
- 1830  sudo apt-get install gstreamer1.0-plugins-bad
- 1831  rm -R ~/.cache/gstreamer-1.0
- 1832  cd Documents/
- 1833  ll
- 1834  cpdf Helico.pdf 1-3,12 -o Helicocout.pdf
- 1835  ll
- 1836  cd Documents/ENIDownloader-master/
- 1837  ll
- 1838  ./crawl.sh 
- 1839  sudo apt-get update
- 1840  sudo apt-get install build-essential chrpath libssl-dev libxft-dev -y
- 1841  sudo apt-get install libfreetype6 libfreetype6-dev -y
- 1842  sudo apt-get install libfontconfig1 libfontconfig1-dev -y
- 1843  cd ~
- 1844  export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
- 1845  wget https://github.com/Medium/phantomjs/releases/download/v2.1.1/$PHANTOM_JS.tar.bz2
- 1846  sudo tar xvjf $PHANTOM_JS.tar.bz2
- 1847  sudo mv $PHANTOM_JS /usr/local/share
- 1848  sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
- 1849  phantomjs --version
- 1850  cd /usr/local/share
- 1851  sudo wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2
- 1852  cd /var/www/
- 1853  git clone git://github.com/n1k0/casperjs.git
- 1854  sudo git clone git://github.com/n1k0/casperjs.git
- 1855  cd casperjs
- 1856  sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
- 1857  rm phantomjs-1.9.2-linux-x86_64.tar.bz2
- 1858  cd /usr/local/share
- 1859  rm phantomjs-1.9.2-linux-x86_64.tar.bz2
- 1860  ll
- 1861  cd /usr/local/share
- 1862  casperjs -version
- 1863  casperjs --version
- 1864  cd ~/Documents/cpdf-binaries-master/
- 1865  cd Linux-Intel-64bit/
- 1866  ./cpdf 
- 1867  ./cpdf --help
- 1868  sudo cp cpdf /usr/local/bin/
- 1869  cd ../..
- 1870  cpdf Helico.pdf 1-3,12-end -o Helicout.pdf
- 1871  ./crawl.sh 
- 1872  cd ENIDownloader-master/
- 1873  ll
- 1874  ./crawl.sh 
- 1875  cpdf Helico.pdf 1-3,12 -o Helicocout.pdf
- 1876  ./crawl.sh 
- 1877  which casperjs 
- 1878  cd /usr/local/bin/casperjs
- 1879  cd /usr/local/bin/
- 1880  ll
- 1881  cd /var/www/casperjs/bin/casperjs
- 1882  wich phantomjs 
- 1883  which phantomjs 
- 1884  cd /usr/local/bin/
- 1885  ll
- 1886  cd /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs
- 1887  cd /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/
- 1888  ll
- 1889  phantomjs
- 1890  which docs
- 1891  sudo apt install phantomjs 
- 1892  ll
- 1893  which docs
- 1894  sudo apt install casperjs
- 1895  cd ~/Documents/Eni/ENIDownloader-master/
- 1896  ./crawl.sh 
- 1897  which /platform/casper.js
- 1898  clear
- 1899  cd Formation_Vagrant/
- 1900  ll
- 1901  vim Vagrantfile 
- 1902  pwd
- 1903  cd ..
- 1904  mkdir Mise_en_Vagrant.configure("2") do |config|situation
- 1905  mkdir Mise_en_situation-2
- 1906  ll
- 1907  ll /home/stagiaire/Formation_Vagrant
- 1908  cd Mise_en_situation-2/
- 1909  cp /home/stagiaire/Formation_Vagrant/Vagrantfile .
- 1910  ll
- 1911  vim Vagrantfile 
- 1912  ll
- 1913  cd ..
- 1914  ll
- 1915  vim Vagrantfile 
- 1916  fping -qag 81.1.8.98/24
- 1917  ll
- 1918  cd Mise_en_situation-2/
- 1919  ll
- 1920  vagrant init
- 1921  rm -f Vagrantfile 
- 1922  vagrant init
- 1923  ll
- 1924  vim Vagrantfile 
- 1925  vagrant validate
- 1926  vim Vagrantfile 
- 1927  vagrant validate
- 1928  vim Vagrantfile 
- 1929  vagrant validate
- 1930  vim Vagrantfile 
- 1931  vagrant validate
- 1932  vim Vagrantfile 
- 1933  vagrant validate
- 1934  vim Vagrantfile 
- 1935  vagrant validate
- 1936  vim Vagrantfile 
- 1937  vagrant validate
- 1938  vim Vagrantfile 
- 1939  vagrant validate
- 1940  vim Vagrantfile 
- 1941  vagrant validate
- 1942  cd /var/www/html
- 1943  ll
- 1944  cd ~/Mise_en_situation-2/
+ 1755  vim Vagrantfile 
+ 1756  vagrant validate
+ 1757  vim Vagrantfile 
+ 1758  vagrant validate
+ 1759  vim Vagrantfile 
+ 1760  vagrant validate
+ 1761  vim Vagrantfile 
+ 1762  vagrant validate
+ 1763  vim Vagrantfile 
+ 1764  vagrant validate
+ 1765  vim Vagrantfile 
+ 1766  vagrant validate
+ 1767  vim Vagrantfile 
+ 1768  vagrant validate
+ 1769  vim Vagrantfile 
+ 1770  vagrant validate
+ 1771  vim Vagrantfile 
+ 1772  vagrant validate
+ 1773  cd /var/www/html
+ 1774  ll
+ 1775  cd ~/Mise_en_situation-2/
+ 1776  ll
+ 1777  vim Vagrantfile 
+ 1778  vagrant validate
+ 1779  vim Vagrantfile 
+ 1780  vagrant validate
+ 1781  vim Vagrantfile 
+ 1782  vagrant up
+ 1783  pwd
+ 1784  vim Vagrantfile 
+ 1785  mkdir Docs
+ 1786  vagrant validate
+ 1787  vim Vagrantfile 
+ 1788  cd Formation_Vagrant/
+ 1789  ll
+ 1790  git status
+ 1791  git add .
+ 1792  git status
+ 1793  git commit -am "commit revision linux"
+ 1794  git push origin demo_vagrant 
+ 1795  ll
+ 1796  git status
+ 1797  vim Vagrantfile 
+ 1798  cd ..
+ 1799  ll
+ 1800  cd PhpstormProjects/
+ 1801  ll
+ 1802  cd untitled/
+ 1803  ll
+ 1804  cd ../..
+ 1805  cd .java/
+ 1806  ll
+ 1807  ll fonts/
+ 1808  ll fonts/1.8.0_152-release/
+ 1809  cat fonts/1.8.0_152-release/fcinfo-1-stagiaire-Ubuntu-18.04-fr.properties 
+ 1810  cd ..
+ 1811  ll
+ 1812  vim Vagrantfile 
+ 1813  vim vagrant.yml 
+ 1814  cd ~/Documents/Eni/
+ 1815  ll
+ 1816  cd ENIDownloader-master/
+ 1817  ll
+ 1818  node_modules/casperjs/bin/casperjs selftest
+ 1819  ./crawl.sh 
+ 1820  cd Formation_Vagrant/Atelier_Terreform/
+ 1821  git add .
+ 1822  git commit -am "ajout instance Kubernetes"
+ 1823  git push origin demo_vagrant 
+ 1824  ansible --version
+ 1825  ssh-keygen 
+ 1826  ssh-copy-id 192.168.31.46
+ 1827  ssh 192.168.31.46 hostname
+ 1828  ll
+ 1829  mkdir Formation_Ansible
+ 1830  cd Formation_Ansible/
+ 1831  git int
+ 1832  git init
+ 1833  git config --global user.name "Yassen ABARJI"
+ 1834  git config --global user.email "yabarji1@gmail.com"
+ 1835  touch Readme.md
+ 1836  vim Readme.md 
+ 1837  git add README.md
+ 1838  git add Readme.md 
+ 1839  git commit -m "add README"
+ 1840  git push -u origin master
+ 1841  touch Ansible
+ 1842  vim Ansible 
+ 1843  mkdir inventory
+ 1844  mv Ansible inventory/hosts
+ 1845  ll
+ 1846  cd inventory/
+ 1847  ansible-inventory -i inventory/ --list
+ 1848  ansible-inventory -i inventory/ --graph
+ 1849  vi ansible.cfg
+ 1850  ansible-inventory --graph
+ 1851  ll
+ 1852  mv ansible.cfg ~/Formation_Ansible
+ 1853  ll
+ 1854  ansible-inventory --graph
+ 1855  vim hosts 
+ 1856  ansible-inventory --graph
+ 1857  ansible -m ping all
+ 1858  cd ..
+ 1859  ansible -m ping all
+ 1860  ansible-inventory --graph
+ 1861  git remote add origin git@gitlab.com:yabarji1/formation_ansible.git
+ 1862  git push -u origin master
+ 1863  git push -f origin master
+ 1864  /home/stagiaire/.ssh/id_rsa.pub
+ 1865  cat /home/stagiaire/.ssh/id_rsa.pub
+ 1866  ll
+ 1867  ls -l
+ 1868  git remote add origin git@github.com:Yabarji1/Formation_Ansible.git
+ 1869  git remote add -f origin git@github.com:Yabarji1/Formation_Ansible.git
+ 1870  git init
+ 1871  git push -f origin master
+ 1872  rm -rf .git/
+ 1873  git init
+ 1874  git remote add origin git@github.com:Yabarji/Formation_Ansible.git
+ 1875  vim Ansible git config --global user.name "Yassen ABARJI"
+ 1876  git config --global user.name "Yassen ABARJI"
+ 1877  git config --global user.email "yabarji1@gmail.com"
+ 1878  mv Readme.md README.md
+ 1879  git add README.md
+ 1880  git commit -m "add README"
+ 1881  git push -u origin master
+ 1882  git add .
+ 1883  git commit -m "Init Formation Ansible"
+ 1884  git push -u origin master
+ 1885  ansible -m ping all
+ 1886  $ansible -m raw -a "date" debian
+ 1887  ll
+ 1888  cll inventory/
+ 1889  ll inventory/
+ 1890  vi hosts
+ 1891  ansible -m ping all
+ 1892  ansible -m raw -a "date" all
+ 1893  ansible -m raw -a "date" debian
+ 1894  ansible -m raw -a "date" node-1
+ 1895  vi files/data.txt
+ 1896  touch files/data.txt
+ 1897  mkdir files
+ 1898  touch files/data.txt
+ 1899  vi files/data.txt
+ 1900  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
+ 1901  cd files/
+ 1902  ll
+ 1903  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
+ 1904  cd ..
+ 1905  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
+ 1906  ip a
+ 1907  git add .
+ 1908  git -am "transfert de fichier vers node-1"
+ 1909  git -m "transfert de fichier vers node-1"
+ 1910  git commit -am "transfert de fichier vers node-1"
+ 1911  git push -u origin master
+ 1912  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
+ 1913  vi files/data.txt 
+ 1914  ip a
+ 1915  ansible -m lineinfile -a "path=/etc/hosts line='192.168.31.38 master'" all
+ 1916  ansible -m lineinfile -a "path=/etc/hosts line='192.168.59.57 master'" all
+ 1917  su -
+ 1918  ll
+ 1919  vi ansible.cfg 
+ 1920  .vimrc
+ 1921  ~/.vimrc
+ 1922  vi ~/.vimrc
+ 1923  git reflog
+ 1924  history
+ 1925  ll
+ 1926  mkdir Command_History
+ 1927  cd Command_History/
+ 1928  Push History.txt
+ 1929  touch  History.txt
+ 1930  history > History.txt 
+ 1931  vim history
+ 1932  history 
+ 1933  history > History.txt 
+ 1934  vim history
+ 1935  cd ..
+ 1936  history > ~/Formation_Ansible/Command_History/History.txt 
+ 1937  mv  ~/Formation_Ansible/Command_History/History.txt ~/Formation_Ansible/Command_History/History
+ 1938  ll ~/Formation_Ansible/Command_History/History.tx
+ 1939  ll ~/Formation_Ansible/Command_History/
+ 1940  history 
+ 1941  history > ~/Formation_Ansible/Command_History/History
+ 1942  vim ~/Formation_Ansible/Command_History/History
+ 1943  history > ~/Formation_Ansible/Command_History/History
+ 1944  stagiaire@T3620-40HG:~/Formation_Ansible[master]$ vim ~/Formation_Ansible/Command_History/History
  1945  ll
- 1946  vim Vagrantfile 
- 1947  vagrant validate
- 1948  vim Vagrantfile 
- 1949  vagrant validate
- 1950  vim Vagrantfile 
- 1951  vagrant up
- 1952  pwd
- 1953  vim Vagrantfile 
- 1954  mkdir Docs
- 1955  vagrant validate
- 1956  vim Vagrantfile 
- 1957  cd Formation_Vagrant/
- 1958  ll
- 1959  git status
- 1960  git add .
- 1961  git status
- 1962  git commit -am "commit revision linux"
- 1963  git push origin demo_vagrant 
- 1964  ll
- 1965  git status
- 1966  vim Vagrantfile 
- 1967  cd ..
- 1968  ll
- 1969  cd PhpstormProjects/
+ 1946  cd inventory/
+ 1947  ll
+ 1948  vim hosts 
+ 1949  ansible-inventory --list
+ 1950  ansible-inventory -i inventory/ --list
+ 1951  cd ..
+ 1952  ansible-inventory -i inventory/ --list
+ 1953  ansible-inventory --list
+ 1954  ansible -m ping all
+ 1955  ansible-inventory --graph
+ 1956  ansible -m raw -a "date" all
+ 1957  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
+ 1958  cat files/data.txt 
+ 1959  vi files/data.txt 
+ 1960  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
+ 1961  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 6'" all
+ 1962  ansible -m lineinfile -a "path=/etc/hosts line='192.168.59.57 master'" all
+ 1963  ll
+ 1964  history > ~/Formation_Ansible/Command_History/History
+ 1965  history 
+ 1966  history > ~/Formation_Ansible/Command_History/History
+ 1967  git add Command_History/
+ 1968  git commit -am "First History command on terminal"
+ 1969  git push origin master 
  1970  ll
- 1971  cd untitled/
- 1972  ll
- 1973  cd ../..
- 1974  cd .java/
- 1975  ll
- 1976  ll fonts/
- 1977  ll fonts/1.8.0_152-release/
- 1978  cat fonts/1.8.0_152-release/fcinfo-1-stagiaire-Ubuntu-18.04-fr.properties 
- 1979  cd ..
- 1980  ll
- 1981  vim Vagrantfile 
- 1982  vim vagrant.yml 
- 1983  cd ~/Documents/Eni/
- 1984  ll
- 1985  cd ENIDownloader-master/
- 1986  ll
- 1987  node_modules/casperjs/bin/casperjs selftest
- 1988  ./crawl.sh 
- 1989  cd Formation_Vagrant/Atelier_Terreform/
- 1990  git add .
- 1991  git commit -am "ajout instance Kubernetes"
- 1992  git push origin demo_vagrant 
- 1993  ansible --version
- 1994  ssh-keygen 
- 1995  ssh-copy-id 192.168.31.46
- 1996  ssh 192.168.31.46 hostname
- 1997  ll
- 1998  mkdir Formation_Ansible
- 1999  cd Formation_Ansible/
- 2000  git int
- 2001  git init
- 2002  git config --global user.name "Yassen ABARJI"
- 2003  git config --global user.email "yabarji1@gmail.com"
- 2004  touch Readme.md
- 2005  vim Readme.md 
- 2006  git add README.md
- 2007  git add Readme.md 
- 2008  git commit -m "add README"
- 2009  git push -u origin master
- 2010  touch Ansible
- 2011  vim Ansible 
- 2012  mkdir inventory
- 2013  mv Ansible inventory/hosts
- 2014  ll
- 2015  cd inventory/
- 2016  ansible-inventory -i inventory/ --list
- 2017  ansible-inventory -i inventory/ --graph
- 2018  vi ansible.cfg
- 2019  ansible-inventory --graph
- 2020  ll
- 2021  mv ansible.cfg ~/Formation_Ansible
- 2022  ll
- 2023  ansible-inventory --graph
- 2024  vim hosts 
- 2025  ansible-inventory --graph
- 2026  ansible -m ping all
- 2027  cd ..
- 2028  ansible -m ping all
- 2029  ansible-inventory --graph
- 2030  git remote add origin git@gitlab.com:yabarji1/formation_ansible.git
- 2031  git push -u origin master
- 2032  git push -f origin master
- 2033  /home/stagiaire/.ssh/id_rsa.pub
- 2034  cat /home/stagiaire/.ssh/id_rsa.pub
- 2035  ll
- 2036  ls -l
- 2037  git remote add origin git@github.com:Yabarji1/Formation_Ansible.git
- 2038  git remote add -f origin git@github.com:Yabarji1/Formation_Ansible.git
- 2039  git init
- 2040  git push -f origin master
- 2041  rm -rf .git/
- 2042  git init
- 2043  git remote add origin git@github.com:Yabarji/Formation_Ansible.git
- 2044  vim Ansible git config --global user.name "Yassen ABARJI"
- 2045  git config --global user.name "Yassen ABARJI"
- 2046  git config --global user.email "yabarji1@gmail.com"
- 2047  mv Readme.md README.md
- 2048  git add README.md
- 2049  git commit -m "add README"
- 2050  git push -u origin master
- 2051  git add .
- 2052  git commit -m "Init Formation Ansible"
- 2053  git push -u origin master
- 2054  ansible -m ping all
- 2055  $ansible -m raw -a "date" debian
- 2056  ll
- 2057  cll inventory/
- 2058  ll inventory/
- 2059  vi hosts
- 2060  ansible -m ping all
- 2061  ansible -m raw -a "date" all
- 2062  ansible -m raw -a "date" debian
- 2063  ansible -m raw -a "date" node-1
- 2064  vi files/data.txt
- 2065  touch files/data.txt
- 2066  mkdir files
- 2067  touch files/data.txt
- 2068  vi files/data.txt
- 2069  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
- 2070  cd files/
- 2071  ll
- 2072  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
- 2073  cd ..
- 2074  ansible -m copy -a "src=data.txt dest=/tmp/data.txt" all
- 2075  ip a
- 2076  git add .
- 2077  git -am "transfert de fichier vers node-1"
- 2078  git -m "transfert de fichier vers node-1"
- 2079  git commit -am "transfert de fichier vers node-1"
- 2080  git push -u origin master
- 2081  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
- 2082  vi files/data.txt 
- 2083  ip a
- 2084  ansible -m lineinfile -a "path=/etc/hosts line='192.168.31.38 master'" all
- 2085  ansible -m lineinfile -a "path=/etc/hosts line='192.168.59.57 master'" all
- 2086  su -
- 2087  ll
- 2088  vi ansible.cfg 
- 2089  .vimrc
- 2090  ~/.vimrc
- 2091  vi ~/.vimrc
- 2092  git reflog
- 2093  history
- 2094  ll
- 2095  mkdir Command_History
- 2096  cd Command_History/
- 2097  Push History.txt
- 2098  touch  History.txt
- 2099  history > History.txt 
- 2100  vim history
- 2101  history 
- 2102  history > History.txt 
- 2103  vim history
- 2104  cd ..
- 2105  history > ~/Formation_Ansible/Command_History/History.txt 
- 2106* 
- 2107  mv  ~/Formation_Ansible/Command_History/History.txt ~/Formation_Ansible/Command_History/History
- 2108* ll ~/Formation_Ansible/Command_History/History.tx
- 2109  ll ~/Formation_Ansible/Command_History/
- 2110  history 
- 2111  history > ~/Formation_Ansible/Command_History/History
- 2112  vim ~/Formation_Ansible/Command_History/History
- 2113  history > ~/Formation_Ansible/Command_History/History
- 2114  stagiaire@T3620-40HG:~/Formation_Ansible[master]$ vim ~/Formation_Ansible/Command_History/History
- 2115  ll
- 2116  cd inventory/
- 2117  ll
- 2118  vim hosts 
- 2119  ansible-inventory --list
- 2120  ansible-inventory -i inventory/ --list
- 2121  cd ..
- 2122  ansible-inventory -i inventory/ --list
- 2123  ansible-inventory --list
- 2124  ansible -m ping all
- 2125  ansible-inventory --graph
- 2126  ansible -m raw -a "date" all
- 2127  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
- 2128  cat files/data.txt 
- 2129  vi files/data.txt 
- 2130  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 5'" all
- 2131  ansible -m lineinfile -a "path=/tmp/data.txt line='ligne 6'" all
- 2132  ansible -m lineinfile -a "path=/etc/hosts line='192.168.59.57 master'" all
- 2133  ll
- 2134  history > ~/Formation_Ansible/Command_History/History
- 2135  history 
- 2136  history > ~/Formation_Ansible/Command_History/History
- 2137  git add Command_History/
- 2138  git commit -am "First History command on terminal"
- 2139  git push origin master 
- 2140  ll
- 2141  vim ansible.cfg 
- 2142  git status
- 2143  ansible-doc package
- 2144  ansible -m package -a "name=apache2 state=present" all
- 2145  ansible -m service -a "name=apache2 state=started enable=yes" all
- 2146  ansible -m service -a "name=apache2 state=started enabled=yes" all
- 2147  systemctl staus apache2
- 2148  systemctl status apache2
- 2149  ansible -m debug -a "var=ansible_host" all
- 2150  cd files/
- 2151  vi index.html
- 2152  ansible -m file -a "src=index.html dest=/var/www/html/index.html" all
- 2153  ansible -m file -a "src=index.html dest=/var/www/html/index2.html" all
- 2154  cd ..
- 2155  ansible -m copy -a "src=index.html dest=/var/www/html/index2.html" all
- 2156  history > ~/Formation_Ansible/Command_History/History
+ 1971  vim ansible.cfg 
+ 1972  git status
+ 1973  ansible-doc package
+ 1974  ansible -m package -a "name=apache2 state=present" all
+ 1975  ansible -m service -a "name=apache2 state=started enable=yes" all
+ 1976  ansible -m service -a "name=apache2 state=started enabled=yes" all
+ 1977  systemctl staus apache2
+ 1978  systemctl status apache2
+ 1979  ansible -m debug -a "var=ansible_host" all
+ 1980  cd files/
+ 1981  vi index.html
+ 1982  ansible -m file -a "src=index.html dest=/var/www/html/index.html" all
+ 1983  ansible -m file -a "src=index.html dest=/var/www/html/index2.html" all
+ 1984  cd ..
+ 1985  ansible -m copy -a "src=index.html dest=/var/www/html/index2.html" all
+ 1986  history > ~/Formation_Ansible/Command_History/History
+ 1987  vi files/index.html
+ 1988  ansible -m uri -a "url=http://192.168.31.46/index2.html" all
+ 1989  ansible -m uri -a "url=http://192.168.31.46/index2.html" return content=yes" all
+ 1990  ansible -m uri -a "url=http://192.168.31.46/index2.html return content=yes" all
+ 1991  ansible -m uri -a "url=http://192.168.31.46/index2.html return_content=yes" all
+ 1992  vim  ~/Formation_Ansible/Command_History/History
+ 1993  cd Formation_Ansible/
+ 1994  vim playbook-0.yml
+ 1995  ansible -m debug -a "msg='Hola el Mundo'" all
+ 1996  ansible-playbook playbook-0.yml
+ 1997  vim playbook-0.yml
+ 1998  ansible-playbook playbook-0.yml
+ 1999  git add .
+ 2000  git commit -am "My first Playbook"
+ 2001  git push origin master 
+ 2002  history
+ 2003  history > ~/Formation_Ansible/Command_History/History
