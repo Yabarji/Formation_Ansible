@@ -1,3 +1,4 @@
 # fichier des var du groupe Debian
 apache_package_name: apache2
 apache_service_name: apache2
+apache_port_file: /etc/apache2/ports.conf

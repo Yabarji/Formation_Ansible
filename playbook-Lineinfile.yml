@@ -1,0 +1,11 @@
+---
+- name: Module lineinfile
+  hosts: all
+
+  tasks:
+  - name: Ajout d'une ligne dans le fichier /tmp/data.txt
+    lineinfile:
+      path: /tmp/data.txt
+      line: "Prénom: {{prenom}}"
+      regexp: "^Prénom"
+      create: yes

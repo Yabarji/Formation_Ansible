@@ -1,0 +1,27 @@
+---
+- name: Module lineinfile
+  hosts: all
+
+  vars:
+    prenom: Yassen
+
+  tasks:
+  - name: Ajout d'une ligne dans le fichier /tmp/data.txt
+    lineinfile:
+      path: /tmp/data.txt
+      line: "Prénom: {{prenom}}"
+      regexp: "^Prénom"
+      create: yes
+    notify: affiche_info
+
+  - meta: flush_handlers        # <<<------
+
+  - name: Bête tâche
+    debug:
+      msg: "Bête tâche"
+
+  handlers:
+  - name: Indiquer que la tâche a conduit à un changement
+    debug:
+      msg: "Fichier modifié !"
+    listen: affiche_info
