@@ -1,0 +1,20 @@
+---
+- name: Mise en oeuvre d'un site web
+  hosts: all
+
+  tasks:
+  - name: Installation du serveur apache
+    package:
+      name: "{{apache_package_name}}"
+      state: present
+
+  - name: Activation et démarrage du service apache
+    systemd:
+      name: "{{apache_service_name}}"
+      state: started
+      enabled: yes
+
+  - name: Copie du fichier index.html
+    copy:
+      src: index.html
+      dest: "{{apache_document_root}}"

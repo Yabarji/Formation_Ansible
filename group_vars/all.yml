@@ -1,0 +1,2 @@
+# fichier des variable pour toutes les machines host
+apache_document_root: /var/www/html/

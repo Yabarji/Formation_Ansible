@@ -1,3 +1,12 @@
 [salle_12]
 debian ansible_host=192.168.31.46
 srv1 ansible_host=192.168.31.52
+
+[Debian_hosts]
+debian ansible_host=192.168.31.46
+
+[CentOS_hosts]
+srv1 ansible_host=192.168.31.52
+
+[CentOS_hosts:vars]
+ansible_python_interpreter=/usr/bin/python

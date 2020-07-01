@@ -1,0 +1,46 @@
+---
+- name: Installation server Web sur machine Debian
+  hosts: Debian_hosts
+
+  tasks:
+  - name: install apache2
+    package:
+      name: apache2
+      state: latest
+
+  - name: Start service apache2, if not started
+    systemd:
+      name: apache2
+      state: started
+      enabled: yes
+
+- name: Installation server Web sur machine CentOs
+  hosts: Centos_hosts
+
+  tasks:
+  - name: install httpd
+    package:
+      name: httpd
+      state: latest
+
+  - name: Start service httpd, if not started
+    systemd:
+      name: httpd
+      state: started
+      enabled: yes
+
+  - name: Exception HTTP sur le firewall
+    firewalld:
+      permanent: yes
+      service: http
+      immediate: yes
+      state: enabled
+
+- name: Copie du fichier Index.html
+  hosts: all
+
+  tasks:
+  - name: Check that a page
+    copy:
+      src: index.html
+      dest: /var/www/html/index.html

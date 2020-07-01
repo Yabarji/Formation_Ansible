@@ -1,0 +1,9 @@
+---
+- name: Clause when
+  hosts: all
+
+  tasks:
+  - name: Tâche subordonnée à l'existence de la variable "go"
+    debug:
+      msg: "Allez zou !"
+    when: go|default('no')|bool
