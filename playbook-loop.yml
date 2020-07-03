@@ -1,0 +1,19 @@
+---
+- name: Ansible et les boucles
+  hosts: debian
+
+  vars:
+    couleurs:
+      - vert
+      - marron tiède
+      - gris scintillant
+      - noir éblouissant
+
+  tasks:
+  - name:
+    debug:
+      msg: "Couleur {{idx + 1}} : {{couleur}}"
+    loop: "{{couleurs}}"
+    loop_control:
+      index_var: idx
+      loop_var: couleur

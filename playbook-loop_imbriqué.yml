@@ -1,0 +1,22 @@
+---
+- name: Ansible et les boucles
+  hosts: debian
+
+  vars:
+    gentsdelamer:
+      - prenom: bob
+        nom: léponge
+        sports:
+          - plongée
+          - natation
+      - prenom: patrick
+        nom: létoile
+        sports:
+          - escalade
+          - danse
+
+  tasks:
+  - name:
+    debug:
+      msg: "{{item.0.prenom}} {{item.1}}"
+    loop: "{{gentsdelamer|subelements('sports')}}"
