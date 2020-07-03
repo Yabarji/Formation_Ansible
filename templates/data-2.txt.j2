@@ -6,3 +6,14 @@
 {% else -%}
    Distribution non supportée
 {% endif %}
+
+Liste des stagiaires:
+{% for stagiaire in stagiaires %}
+   {{ stagiaire }}
+{% endfor %}
+
+Informations sur bob:
+{% for cle, valeur in bob.items() %}
+    {{cle}}: {{valeur}}
+{% endfor %}
+
