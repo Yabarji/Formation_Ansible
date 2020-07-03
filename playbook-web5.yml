@@ -1,0 +1,42 @@
+---
+- name: Mise en oeuvre d'un site web
+  hosts: all
+
+  tasks:
+  - name: Installation du serveur apache
+    package:
+      name: "{{apache_package_name}}"
+      state: present
+
+  - name: Activation et démarrage du service apache
+    systemd:
+      name: "{{apache_service_name}}"
+      state: started
+      enabled: yes
+
+  - name: configuration du port d'ecoute d'Apache
+    lineinfile:
+      path: "{{apache_port_file}}"
+      line: "Listen {{apache_port}}"
+      regexp: "^Listen"
+    notify: restart_apache
+
+  - name: Exception HTTP sur le firewall
+    firewalld:
+      permanent: yes
+      port: "{{apache_port}}/tcp"
+      immediate: yes
+      state: enabled
+    when: ansible_distribution == 'CentOS'
+
+  - name: Copie du fichier index.html
+    copy:
+      src: index.html
+      dest: "{{apache_document_root}}"
+
+  handlers:
+  - name: Redemarrage du service apache
+    systemd:
+      name: "{{apache_service_name}}"
+      state: restarted
+    listen: restart_apache

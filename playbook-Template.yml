@@ -1,0 +1,9 @@
+---
+- name: Les Templates Jinja2
+  hosts: all
+
+  tasks:
+  - name: Template
+    template:
+      src: data.txt.j2
+      dest: /tmp/data.txt

@@ -1,0 +1,8 @@
+---
+- name: Les "facts"
+  hosts: all
+
+  tasks:
+  - name: Variable "fact" ansible_distribution
+    debug:
+      var: ansible_distribution
