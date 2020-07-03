@@ -1,0 +1,8 @@
+{# Blablabla #}
+{% if ansible_distribution == "Debian" -%}
+   Distribution Debian
+{% elif ansible_distribution == "CentOS" -%}
+   Distribution CentOS
+{% else -%}
+   Distribution non supportée
+{% endif %}
