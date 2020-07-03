@@ -1,0 +1,30 @@
+---
+- name: Les Templates Jinja2
+  hosts: all
+  vars:
+    stagiaires:
+      - Alexandre
+      - Hamza
+      - Julio
+      - Laury
+      - Mohammed
+      - Moussa
+      - Rachid
+      - Safia
+      - Yassen
+      - Yolande
+    logins:
+      - login: bob
+        home: /home/bob
+      - login: curt
+        home: /home/curt
+
+    bob:
+      prenom: bob
+      nom: léponge
+      lieu: au fond de l'eau
+
+  tasks:
+  - name: Template
+    debug:
+      msg: "{{lookup('template','data-2.txt.j2').splitlines()}}"
