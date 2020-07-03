@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ansible_hostname}}</title>
+  </head>
+  <body>
+    <h2>Accueil {{ansible_hostname}}</h2>
+        Architecture: {{ansible_architecture}}<br/>
+        Distribution: {{ansible_distribution}}<br/>
+        Adresse IPv4: {{ansible_default_ipv4.address}}<br/>
+        <ul>
+        {% for montage in ansible_mounts %}
+                <li>{{montage.device}} mounté sur {{montage.mount}}</li>
+        {% endfor %}
+        </ul>
+  </body>
+</html>

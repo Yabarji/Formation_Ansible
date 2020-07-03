@@ -34,6 +34,11 @@
       src: index.html
       dest: "{{apache_document_root}}"
 
+  - name: Fichier "templaté" node.html
+    template:
+      src: node.html.j2
+      dest: "{{apache_document_root}}/node.html"
+
   handlers:
   - name: Redemarrage du service apache
     systemd:
