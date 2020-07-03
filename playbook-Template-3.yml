@@ -1,0 +1,11 @@
+---
+- name: Les Templates Jinja2
+  hosts: all
+
+  tasks:
+  - name: Template
+    template:
+      src: data-2.txt.j2
+      dest: /tmp/templates/data-{{ansible_hostname}}.txt
+    delegate_to: localhost
+    become: no

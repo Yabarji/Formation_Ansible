@@ -1,0 +1,19 @@
+---
+- name: Mise en oeuvre d'une serveur MariaDB avec le rôle Geerlingguy.mysql
+  hosts: all
+
+  roles:
+    - role: geerlingguy.mysql
+      mysql_root_password: secret
+      mysql_databases:
+        - name: db1
+          encoding: utf8
+          replicate: 0
+        - name: db2
+          encoding: utf8
+          replicate: 0
+      mysql_users:
+        - name: bob
+          password: azerty
+          host: 127.0.0.1
+          priv: db1.*:SELECT,INSERT
