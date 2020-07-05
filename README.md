@@ -1031,17 +1031,6 @@ Installation du rôle geerlingguy.mysql
 ansible-galaxy install geerlingguy.mysql -p roles
 Création du playbook-role-mariadb
 pour installer mariadb avec le mot de passe 'secret' pour l'administrateur
-Vérification sur les nodes
-ss -tln
-systemctl status mariadb
-pour y créer les deux bases db1 et db2
-On se connecte à mariadb par : mysql -u root -p
-Exécuter la commande : SHOW DATABASES;  # Attention au point-virgule final
-pour y créer l'utilisateur bob avec le mot de passe 'azerty' et les droits SELECT, INSERT sur la base db1
-En étant connecté à mariadb, exécuter la commande : SHOW GRANTS FOR bob@localhost ou bob@'%'
-
-Première version du playbook-role-mysql.yml :
-
 ---
 - name: Mise en oeuvre d'une serveur MariaDB avec le rôle Geerlingguy.mysql
   hosts: all
@@ -1050,15 +1039,124 @@ Première version du playbook-role-mysql.yml :
     - role: geerlingguy.mysql
       mysql_root_password: secret
 
-Chiffrement des données 
+Vérification
+systemctl status mariadb
+pour y créer les deux bases db1 et db2
+---
+- name: Mise en oeuvre d'une serveur MariaDB avec le rôle Geerlingguy.mysql
+  hosts: all
 
+  roles:
+    - role: geerlingguy.mysql
+      mysql_root_password: secret
+      mysql_databases:
+        - name: db1
+          encoding: utf8
+          replicate: 0
+        - name: db2
+          encoding: utf8
+          replicate: 0
+
+Vérification sur un node
+On se connecte à mariadb par : mysql -u root -p
+Exécuter la commande : SHOW DATABASES;  # Attention au point-virgule final
+pour y créer l'utilisateur "bob" avec le mot de passe 'azerty' et les droits SELECT, INSERT sur la base db1
+---
+- name: Mise en oeuvre d'une serveur MariaDB avec le rôle Geerlingguy.mysql
+  hosts: all
+
+  roles:
+    - role: geerlingguy.mysql
+      mysql_root_password: secret
+      mysql_databases:
+        - name: db1
+          encoding: utf8
+          replicate: 0
+        - name: db2
+          encoding: utf8
+          replicate: 0
+      mysql_users:
+        - name: bob
+          password: azerty
+          host: 127.0.0.1
+          priv: db1.*:SELECT,INSERT
+En étant connecté à mariadb, exécuter la commande : SHOW GRANTS FOR bob@localhost ou bob@'%'
+
+Chiffrement des données 
+Deux modalités :
+chiffrement d'un fichier
+chiffrement d'un champ
+
+Chiffrement/déchiffrement/édition d'un fichier
+
+Commande permet de générer un contenu aléatoire :
+tr -dc "a-zA-Z0-9/_" < /dev/urandom | dd bs=1c count=512 of=key.txt
+ansible-vault encrypt data.txt --vault-id=key.txt
+ansible-vault decrypt data.txt --vault-id=key.txt
+ansible-vault utilisation data.txt --vault-id=key.txt
+
+Utilisation d'un fichier chiffré au sein d'un playbook
+Pour qu'un tel playbook puisse accéder au fichier, il faut lui fournir la clé de chiffrement :
+ansible-playbook playbook-vault-1.yml --vault-id=key.txt
+
+Chiffrement d'un champ
+ansible-vault encrypt_string azerty --vault-id=key.txt
+
+Remarque
+Au lieu d'utiliser l'option --vault-id, on peut faire appel à la variable d'environnement ANSIBLE_VAULT_IDENTITY_LIST.
+
+Chiffrement avec fourniture interactive d'un mot de passe 
+ansible-vault encrypt_string secret --ask-vault-pass
+New Vault password:
+Confirm New Vault password:
+!vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          36646563363866333466643335353961353338623361663534366531353839643264393363373138
+          3636366439356461336562656166646531333035363435390a633230613665346561303935613134
+          32336237663333626663613338346438653666633863636331383763396665373735613931366535
+          3837376563653332300a663730336430623937643037386664326565393131386638616234313263
+          3933
+Encryption successful
 
 Les TAGS
 
+Les tags sont des étiquettes affectées à des actes, des tâches, des blocs permettant de sélectionner finement ce qui sera exécuté à l'aide de l'option --tags.
+Tags particulier
+never : ne sera jamais joué sauf appel explicite par --tags never
+always : sera toujours joué
+tagged : joue tout élément dès lors qu'il est taggué
+untagged : c'est l'inverse
 
+Exemple :
+---
+- name: Acte I du premier Playbook
+  hosts: all
+  tags: acte_1
 
-Démonstration Ansible/Docker (si le temps le permet...)
+  tasks:
+  - name: Tâche I de l'Acte I
+    debug:
+      msg: "Hola el Mundo"
+    tags: debug_a
 
+  - name: Tâche II de l'Acte I
+    debug:
+      msg: "Que tal?"
+    tags: never
+
+- name: Acte II
+  hosts: all
+  tags: acte_2
+
+  tasks:
+  - name: Tâche I de l'Acte II
+    debug:
+      msg: "Hello World"
+
+  - name: Tâche II de l'Acte II
+    debug:
+      msg: "How do you do ?"
+    tags: debug_a,always
 
 Finalités/objectifs/intérêts de quelques outils
 
@@ -1104,6 +1202,11 @@ Un gros plus :
 Docker
 Virtualisation
 
-Kubernetes/Puppet/Vagrant/Openshift
+Solution de supervision/monitoring
 
-
+1 docker grafana : visualisation/alerte
+1 docker influxdb : TSDB Base de données Orientée TimeSeries
+Sur chaque serveur (physique/virtuel)
+Installation du serveur
+Installation de l'agent telegraf chargé des mesures et de leur envoi vers le docker influxdb
+-> Vagrant+Ansible
