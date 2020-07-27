@@ -19,22 +19,22 @@
         "root": "UUID=2aad7db1-9cd8-4f5d-b5fc-395dce360327"
     },
     "ansible_date_time": {
-        "date": "2020-07-03",
-        "day": "03",
-        "epoch": "1593735454",
-        "hour": "02",
-        "iso8601": "2020-07-03T00:17:34Z",
-        "iso8601_basic": "20200703T021734299283",
-        "iso8601_basic_short": "20200703T021734",
-        "iso8601_micro": "2020-07-03T00:17:34.299411Z",
-        "minute": "17",
+        "date": "2020-07-05",
+        "day": "05",
+        "epoch": "1593968200",
+        "hour": "18",
+        "iso8601": "2020-07-05T16:56:40Z",
+        "iso8601_basic": "20200705T185640238933",
+        "iso8601_basic_short": "20200705T185640",
+        "iso8601_micro": "2020-07-05T16:56:40.239016Z",
+        "minute": "56",
         "month": "07",
-        "second": "34",
-        "time": "02:17:34",
+        "second": "40",
+        "time": "18:56:40",
         "tz": "CEST",
         "tz_offset": "+0200",
-        "weekday": "vendredi",
-        "weekday_number": "5",
+        "weekday": "dimanche",
+        "weekday_number": "0",
         "weeknumber": "26",
         "year": "2020"
     },
@@ -236,7 +236,7 @@
         "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
         "PWD": "/home/stagiaire",
         "SHELL": "/bin/bash",
-        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-unvvlfnxhabkqvirqubxvlfirijnryon ; /usr/bin/python /home/stagiaire/.ansible/tmp/ansible-tmp-1593735452.9885552-24043-191556824641694/AnsiballZ_setup.py",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-cwidjaontmfogyuksmngvyumihapjlzb ; /usr/bin/python /home/stagiaire/.ansible/tmp/ansible-tmp-1593968199.048988-21695-103319861328696/AnsiballZ_setup.py",
         "SUDO_GID": "1000",
         "SUDO_UID": "1000",
         "SUDO_USER": "stagiaire",
@@ -287,16 +287,16 @@
     },
     "ansible_machine": "x86_64",
     "ansible_machine_id": "c65012ea0c494898a649998c5dbbba3f",
-    "ansible_memfree_mb": 166,
+    "ansible_memfree_mb": 41,
     "ansible_memory_mb": {
         "nocache": {
-            "free": 370,
-            "used": 113
+            "free": 271,
+            "used": 212
         },
         "real": {
-            "free": 166,
+            "free": 41,
             "total": 483,
-            "used": 317
+            "used": 442
         },
         "swap": {
             "cached": 0,
@@ -308,18 +308,18 @@
     "ansible_memtotal_mb": 483,
     "ansible_mounts": [
         {
-            "block_available": 4299550,
+            "block_available": 4212610,
             "block_size": 4096,
             "block_total": 4869540,
-            "block_used": 569990,
+            "block_used": 656930,
             "device": "/dev/sda1",
             "fstype": "ext4",
-            "inode_available": 1208036,
+            "inode_available": 1206553,
             "inode_total": 1245184,
-            "inode_used": 37148,
+            "inode_used": 38631,
             "mount": "/",
             "options": "rw,relatime,errors=remount-ro",
-            "size_available": 17610956800,
+            "size_available": 17254850560,
             "size_total": 19945635840,
             "uuid": "2aad7db1-9cd8-4f5d-b5fc-395dce360327"
         }
@@ -421,7 +421,7 @@
     ],
     "ansible_system_capabilities_enforced": "True",
     "ansible_system_vendor": "innotek GmbH",
-    "ansible_uptime_seconds": 313078,
+    "ansible_uptime_seconds": 545824,
     "ansible_user_dir": "/root",
     "ansible_user_gecos": "root",
     "ansible_user_gid": 0,

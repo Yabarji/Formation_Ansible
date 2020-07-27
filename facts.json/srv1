@@ -26,22 +26,22 @@
         "root": "/dev/mapper/centos-root"
     },
     "ansible_date_time": {
-        "date": "2020-07-03",
-        "day": "03",
-        "epoch": "1593735639",
-        "hour": "02",
-        "iso8601": "2020-07-03T00:20:39Z",
-        "iso8601_basic": "20200703T022039411171",
-        "iso8601_basic_short": "20200703T022039",
-        "iso8601_micro": "2020-07-03T00:20:39.411410Z",
-        "minute": "20",
+        "date": "2020-07-05",
+        "day": "05",
+        "epoch": "1593968201",
+        "hour": "18",
+        "iso8601": "2020-07-05T16:56:41Z",
+        "iso8601_basic": "20200705T185641416399",
+        "iso8601_basic_short": "20200705T185641",
+        "iso8601_micro": "2020-07-05T16:56:41.416524Z",
+        "minute": "56",
         "month": "07",
-        "second": "39",
-        "time": "02:20:39",
+        "second": "41",
+        "time": "18:56:41",
         "tz": "CEST",
         "tz_offset": "+0200",
-        "weekday": "vendredi",
-        "weekday_number": "5",
+        "weekday": "dimanche",
+        "weekday_number": "0",
         "weeknumber": "26",
         "year": "2020"
     },
@@ -450,14 +450,14 @@
         "PWD": "/home/stagiaire",
         "SHELL": "/bin/bash",
         "SHLVL": "1",
-        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-ryipmbefdchjolrtfcczodtqnrwtzpsv ; /usr/bin/python /home/stagiaire/.ansible/tmp/ansible-tmp-1593735637.9549074-25578-185415891881059/AnsiballZ_setup.py",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-jdgvwxfkvxfzfqedhqksnevofblpfkdf ; /usr/bin/python /home/stagiaire/.ansible/tmp/ansible-tmp-1593968199.2879746-21696-207395848095510/AnsiballZ_setup.py",
         "SUDO_GID": "1001",
         "SUDO_UID": "1000",
         "SUDO_USER": "stagiaire",
         "TERM": "xterm",
         "USER": "root",
         "USERNAME": "root",
-        "XDG_SESSION_ID": "102",
+        "XDG_SESSION_ID": "190",
         "_": "/usr/bin/python"
     },
     "ansible_fibre_channel_wwn": [],
@@ -584,22 +584,22 @@
     },
     "ansible_machine": "x86_64",
     "ansible_machine_id": "635b158520d943bf88b6bfd7f979c45f",
-    "ansible_memfree_mb": 10,
+    "ansible_memfree_mb": 4,
     "ansible_memory_mb": {
         "nocache": {
-            "free": 90,
-            "used": 145
+            "free": 61,
+            "used": 174
         },
         "real": {
-            "free": 10,
+            "free": 4,
             "total": 235,
-            "used": 225
+            "used": 231
         },
         "swap": {
-            "cached": 18,
-            "free": 3919,
+            "cached": 16,
+            "free": 3844,
             "total": 3967,
-            "used": 48
+            "used": 123
         }
     },
     "ansible_memtotal_mb": 235,
@@ -621,18 +621,18 @@
             "uuid": "08a65702-5b66-4c6a-b15a-87d996b47c92"
         },
         {
-            "block_available": 11528997,
+            "block_available": 11449674,
             "block_size": 4096,
             "block_total": 11821425,
-            "block_used": 292428,
+            "block_used": 371751,
             "device": "/dev/mapper/centos-root",
             "fstype": "xfs",
-            "inode_available": 23626612,
+            "inode_available": 23623245,
             "inode_total": 23654400,
-            "inode_used": 27788,
+            "inode_used": 31155,
             "mount": "/",
             "options": "rw,seclabel,relatime,attr2,inode64,noquota",
-            "size_available": 47222771712,
+            "size_available": 46897864704,
             "size_total": 48420556800,
             "uuid": "d0387577-8f8a-4479-83ff-0d00091b15f4"
         }
@@ -700,7 +700,7 @@
     "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAPKs0ziYhFqh/Ep4/HAt/oEyknX6y7YypKvHTW4FZN+sJ4C7TfhzqijTOSOHsT9q/JzzPtYJsZ8b1AZK5h7LqE=",
     "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIEVxDIHNImNyxRzlO4705rNCqZpJebaciy6k8xGAyNyJ",
     "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDEFDuASDQqH+p9PJCQ0lGG4JPvj6MHcm5QShLtURfUCiTA4Xag+bISP4ak2nAIOfqWbXHvvb7X1Wk0QivV78MUckFlUOn+3443ugML9FhFkZzG01I2HDH/FGQV80nEhXod8N6prMehAd/HjQ9XkJKpIke4d5Ak53HaALWcZ+E2FtS9/gKztiEa+CEdRnXyrxMTZJ7ZJlrZNu95R9lrMQlJY7sZbiDBAB9lSCVzq5q38OP+cI8jgp+rs8M0d+IyLYmtWL6z8Qa4laxpNe+A9Y7IQy0Df1ht0HkVhTW56AjApttsKIHmMpYkNyKEhBxiDoHiKoHcPIQL6kP19YYt7lvZ",
-    "ansible_swapfree_mb": 3919,
+    "ansible_swapfree_mb": 3844,
     "ansible_swaptotal_mb": 3967,
     "ansible_system": "Linux",
     "ansible_system_capabilities": [
@@ -744,7 +744,7 @@
     ],
     "ansible_system_capabilities_enforced": "True",
     "ansible_system_vendor": "innotek GmbH",
-    "ansible_uptime_seconds": 233756,
+    "ansible_uptime_seconds": 466318,
     "ansible_user_dir": "/root",
     "ansible_user_gecos": "root",
     "ansible_user_gid": 0,
